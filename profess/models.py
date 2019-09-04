@@ -39,7 +39,7 @@ class User(models.Model):
 class Comment(models.Model):
     title = models.CharField(max_length=50)
     content = models.CharField(max_length=200)
-    user = models.ForeignKey(User, related_name='users', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='user', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -48,8 +48,8 @@ class Comment(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=50)
-    user = models.ForeignKey(User, related_name='users', on_delete=models.CASCADE)
-    content = models.CharField(max_length=500)
+    created_by = models.ForeignKey(User, related_name='created_by', on_delete=models.CASCADE)
+    blog_content = models.CharField(max_length=500)
     created_at = models.DateTimeField(auto_now_add=True)
     comment = models.ManyToManyField(Comment, related_name='blogs', blank=True)
 
