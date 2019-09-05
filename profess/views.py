@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.status import HTTP_201_CREATED, HTTP_422_UNPROCESSABLE_ENTITY, HTTP_204_NO_CONTENT
 
-from .models import News_Interest, Events_Interest, Jobs_Interest, User, Comment, Blog
+from .models import NewsInterest, EventsInterest, JobsInterest, User, Comment, Blog
 
 
 from .serializers import UserSerializer, EventSerializer, NewsSerializer, JobSerializer, CommentSerializer, BlogSerializer, PopulatedUserSerializer, PopulatedBlogSerializer

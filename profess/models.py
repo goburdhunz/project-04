@@ -1,21 +1,21 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
-
-class News_Interest(models.Model):
+class NewsInterest(models.Model):
     news_topic = models.CharField(max_length=50)
 
     def __str__(self):
         return self.news_topic
 
 
-class Events_Interest(models.Model):
+class EventsInterest(models.Model):
     event_type = models.CharField(max_length=50)
 
     def __str__(self):
         return self.event_type
 
 
-class Jobs_Interest(models.Model):
+class JobsInterest(models.Model):
     job_sector = models.CharField(max_length=50)
 
     def __str__(self):
@@ -40,15 +40,16 @@ class Blog(models.Model):
     def __str__(self):
         return f'{self.title}, {self.created_by} - {self.created_at}'
 
-class User(models.Model):
-    name = models.CharField(max_length=50)
+class User(AbstractUser):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
     location = models.CharField(max_length=50)
     job_title = models.CharField(max_length=50)
     summary = models.CharField(max_length=200)
     image = models.CharField(max_length=200)
-    news_topic = models.ManyToManyField(News_Interest, related_name='users', blank=True)
-    event_type = models.ManyToManyField(Events_Interest, related_name='users', blank=True)
-    job_sector = models.ManyToManyField(Jobs_Interest, related_name='users', blank=True)
+    news_topic = models.ManyToManyField(NewsInterest, related_name='users', blank=True)
+    event_type = models.ManyToManyField(EventsInterest, related_name='users', blank=True)
+    job_sector = models.ManyToManyField(JobsInterest, related_name='users', blank=True)
 
     def __str__(self):
-        return f'{self.name}, {self.job_title} - {self.location}'
+        return f'{self.first_name} {self.last_name}, {self.job_title} - {self.location}'
