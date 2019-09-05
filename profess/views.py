@@ -5,7 +5,7 @@ from rest_framework.status import HTTP_201_CREATED, HTTP_422_UNPROCESSABLE_ENTIT
 from .models import News_Interest, Events_Interest, Jobs_Interest, User, Comment, Blog
 
 
-from .serializers import UserSerializer, EventSerializer, NewsSerializer, JobSerializer, CommentSerializer, BlogSerializer, PopulatedUserSerializer
+from .serializers import UserSerializer, EventSerializer, NewsSerializer, JobSerializer, CommentSerializer, BlogSerializer, PopulatedUserSerializer, PopulatedBlogSerializer
 
 
 
@@ -14,4 +14,11 @@ class UserDetailView(APIView):
     def get(self, _request, pk):
         user = User.objects.get(pk=pk)
         serializer = PopulatedUserSerializer(user)
+        return Response(serializer.data)
+
+class BlogList(APIView):
+
+    def get(self, _request):
+        blogs = Blog.objects.all()
+        serializer = PopulatedBlogSerializer(blogs, many=True)
         return Response(serializer.data)

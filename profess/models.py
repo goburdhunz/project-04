@@ -26,6 +26,7 @@ class Comment(models.Model):
     content = models.CharField(max_length=200)
     user = models.ForeignKey('User', related_name='user', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
+    blogs = models.ManyToManyField('Blog', related_name='comments', blank=True)
 
     def __str__(self):
         return f'{self.title}, {self.user} - {self.created_at}'
@@ -35,7 +36,6 @@ class Blog(models.Model):
     created_by = models.ForeignKey('User', related_name='blogs', on_delete=models.CASCADE)
     blog_content = models.CharField(max_length=500)
     created_at = models.DateTimeField(auto_now_add=True)
-    comments = models.ForeignKey(Comment, related_name='blogs', null=True, blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.title}, {self.created_by} - {self.created_at}'
