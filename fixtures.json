@@ -1,0 +1,172 @@
+[
+{
+  "model": "profess.news_interest",
+  "pk": 1,
+  "fields": {
+    "news_topic": "tech"
+  }
+},
+{
+  "model": "profess.news_interest",
+  "pk": 2,
+  "fields": {
+    "news_topic": "finance"
+  }
+},
+{
+  "model": "profess.news_interest",
+  "pk": 3,
+  "fields": {
+    "news_topic": "marketing"
+  }
+},
+{
+  "model": "profess.news_interest",
+  "pk": 4,
+  "fields": {
+    "news_topic": "medical"
+  }
+},
+{
+  "model": "profess.events_interest",
+  "pk": 1,
+  "fields": {
+    "event_type": "tech"
+  }
+},
+{
+  "model": "profess.events_interest",
+  "pk": 2,
+  "fields": {
+    "event_type": "blockchain"
+  }
+},
+{
+  "model": "profess.events_interest",
+  "pk": 3,
+  "fields": {
+    "event_type": "human resources"
+  }
+},
+{
+  "model": "profess.events_interest",
+  "pk": 4,
+  "fields": {
+    "event_type": "networking"
+  }
+},
+{
+  "model": "profess.jobs_interest",
+  "pk": 1,
+  "fields": {
+    "job_sector": "tech"
+  }
+},
+{
+  "model": "profess.jobs_interest",
+  "pk": 2,
+  "fields": {
+    "job_sector": "engineering"
+  }
+},
+{
+  "model": "profess.jobs_interest",
+  "pk": 3,
+  "fields": {
+    "job_sector": "medicine"
+  }
+},
+{
+  "model": "profess.comment",
+  "pk": 1,
+  "fields": {
+    "title": "great tips",
+    "content": "Very helpful and useful tips",
+    "user": 2,
+    "created_at": "2019-09-05T13:48:56.577Z"
+  }
+},
+{
+  "model": "profess.comment",
+  "pk": 2,
+  "fields": {
+    "title": "Recommend?",
+    "content": "Would you recommened medical bootcamp/",
+    "user": 3,
+    "created_at": "2019-09-05T13:55:11.331Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 1,
+  "fields": {
+    "title": "best bootcamp tips",
+    "created_by": 1,
+    "blog_content": "Bootcamps are great!",
+    "created_at": "2019-09-05T13:46:19.156Z",
+    "comments": 2
+  }
+},
+{
+  "model": "profess.user",
+  "pk": 1,
+  "fields": {
+    "name": "zeeshan goburdhUN",
+    "location": "London",
+    "job_title": "Junior Software Engineer",
+    "summary": "Want to move into finance",
+    "image": "https://amp.insider.com/images/59b8495be517bd2c008b469c-1136-763.jpg",
+    "news_topic": [
+      1
+    ],
+    "event_type": [
+      1
+    ],
+    "job_sector": [
+      1
+    ]
+  }
+},
+{
+  "model": "profess.user",
+  "pk": 2,
+  "fields": {
+    "name": "John Doe",
+    "location": "London",
+    "job_title": "UX Engineer",
+    "summary": "Want to move into finance",
+    "image": "https://amp.insider.com/images/59fa0324b9fdbb32008b45dc-1136-766.jpg",
+    "news_topic": [
+      2
+    ],
+    "event_type": [
+      2
+    ],
+    "job_sector": [
+      2
+    ]
+  }
+},
+{
+  "model": "profess.user",
+  "pk": 3,
+  "fields": {
+    "name": "Jane shipless",
+    "location": "London",
+    "job_title": "pr executive",
+    "summary": "Interested in becoming a doctor",
+    "image": "https://www.foliosociety.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/l/t/ltr_book.png",
+    "news_topic": [
+      2,
+      4
+    ],
+    "event_type": [
+      3,
+      4
+    ],
+    "job_sector": [
+      3
+    ]
+  }
+}
+]
