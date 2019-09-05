@@ -2,25 +2,43 @@ from django.db import models
 
 
 class News_Interest(models.Model):
-    topic = models.CharField(max_length=50)
+    news_topic = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.topic
+        return self.news_topic
 
 
 class Events_Interest(models.Model):
-    type = models.CharField(max_length=50)
+    event_type = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.type
+        return self.event_type
 
 
 class Jobs_Interest(models.Model):
-    sector = models.CharField(max_length=50)
+    job_sector = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.sector
+        return self.job_sector
 
+class Comment(models.Model):
+    title = models.CharField(max_length=50)
+    content = models.CharField(max_length=200)
+    user = models.ForeignKey('User', related_name='user', on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.title}, {self.user} - {self.created_at}'
+
+class Blog(models.Model):
+    title = models.CharField(max_length=50)
+    created_by = models.ForeignKey('User', related_name='blogs', on_delete=models.CASCADE)
+    blog_content = models.CharField(max_length=500)
+    created_at = models.DateTimeField(auto_now_add=True)
+    comments = models.ForeignKey(Comment, related_name='blogs', null=True, blank=True, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.title}, {self.created_by} - {self.created_at}'
 
 class User(models.Model):
     name = models.CharField(max_length=50)
@@ -28,30 +46,9 @@ class User(models.Model):
     job_title = models.CharField(max_length=50)
     summary = models.CharField(max_length=200)
     image = models.CharField(max_length=200)
-    news_Interest = models.ManyToManyField(News_Interest, related_name='users', blank=True)
-    events_Interest = models.ManyToManyField(Events_Interest, related_name='users', blank=True)
-    jobs_Interest = models.ManyToManyField(Jobs_Interest, related_name='users', blank=True)
+    news_topic = models.ManyToManyField(News_Interest, related_name='users', blank=True)
+    event_type = models.ManyToManyField(Events_Interest, related_name='users', blank=True)
+    job_sector = models.ManyToManyField(Jobs_Interest, related_name='users', blank=True)
 
     def __str__(self):
         return f'{self.name}, {self.job_title} - {self.location}'
-
-
-class Comment(models.Model):
-    title = models.CharField(max_length=50)
-    content = models.CharField(max_length=200)
-    user = models.ForeignKey(User, related_name='user', on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f'{self.title}, {self.user} - {self.created_at}'
-
-
-class Blog(models.Model):
-    title = models.CharField(max_length=50)
-    created_by = models.ForeignKey(User, related_name='created_by', on_delete=models.CASCADE)
-    blog_content = models.CharField(max_length=500)
-    created_at = models.DateTimeField(auto_now_add=True)
-    comment = models.ManyToManyField(Comment, related_name='blogs', blank=True)
-
-    def __str__(self):
-        return f'{self.title}, {self.user} - {self.created_at}'
