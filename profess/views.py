@@ -36,7 +36,7 @@ class JobList(APIView):
             "keywords": "junior software developer",
             "location": "london"
         }
-        auth = ('c9911e8f-fb68-448f-94ec-3217c0eb0168', '')
+        auth = ('process.env.REED_API_KEY', '')
 
         response = requests.get(url, params=params, auth=auth)
         return Response(response.json()['results'])
@@ -49,7 +49,7 @@ class EventList(APIView):
             "q": "tech",
             "location.address": "london"
         }
-        headers = {"Authorization": 'Bearer Y4CBHYXIUCFY3LMJFGEG'}
+        headers = {"Authorization": 'Bearer,  process.env.NEWS_API_KEY'}
 
         response = requests.get(url, params=params, headers=headers)
         return Response(response.json()['events'])
@@ -62,7 +62,7 @@ class NewsList(APIView):
             "q": "tech",
             "sortBy": "publishedAt"
         }
-        headers = {"X-Api-Key": 'f60dcc94a4264c74a6485ed450132df2'}
+        headers = {"X-Api-Key": 'process.env.EVENTBRITE_API_KEY'}
 
         response = requests.get(url, params=params, headers=headers)
         return Response(response.json()['articles'])
