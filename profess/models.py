@@ -34,7 +34,7 @@ class Comment(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=50)
     created_by = models.ForeignKey('User', related_name='blogs', on_delete=models.CASCADE)
-    blog_content = models.CharField(max_length=500)
+    blog_content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
