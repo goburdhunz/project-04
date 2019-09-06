@@ -1,9 +1,12 @@
+import os
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.status import HTTP_201_CREATED, HTTP_422_UNPROCESSABLE_ENTITY, HTTP_204_NO_CONTENT
 import requests
 from .models import NewsInterest, EventsInterest, JobsInterest, User, Comment, Blog
-
+reed_key = os.getenv('REED_API_KEY')
+event_key = os.getenv('EVENTBRITE_API_KEY')
+news_key = os.getenv('NEWS_API_KEY')
 from .serializers import UserSerializer, EventSerializer, NewsSerializer, JobSerializer, CommentSerializer, BlogSerializer, PopulatedUserSerializer, PopulatedBlogSerializer
 
 
@@ -36,10 +39,11 @@ class JobList(APIView):
             "keywords": "junior software developer",
             "location": "london"
         }
-        auth = ('process.env.REED_API_KEY', '')
+        auth = (reed_key, '')
 
         response = requests.get(url, params=params, auth=auth)
         return Response(response.json()['results'])
+
 
 class EventList(APIView):
 
@@ -49,10 +53,10 @@ class EventList(APIView):
             "q": "tech",
             "location.address": "london"
         }
-        headers = {"Authorization": 'Bearer,  process.env.NEWS_API_KEY'}
+        headers = {"Authorization": f'Bearer {event_key}'}
 
         response = requests.get(url, params=params, headers=headers)
-        return Response(response.json()['events'])
+        return Response(response.json())
 
 class NewsList(APIView):
 
@@ -62,7 +66,7 @@ class NewsList(APIView):
             "q": "tech",
             "sortBy": "publishedAt"
         }
-        headers = {"X-Api-Key": 'process.env.EVENTBRITE_API_KEY'}
+        headers = {"X-Api-Key": news_key}
 
         response = requests.get(url, params=params, headers=headers)
         return Response(response.json()['articles'])
