@@ -56,7 +56,7 @@ class EventList(APIView):
         headers = {"Authorization": f'Bearer {event_key}'}
 
         response = requests.get(url, params=params, headers=headers)
-        return Response(response.json())
+        return Response(response.json()['events'])
 
 class NewsList(APIView):
 
@@ -64,7 +64,8 @@ class NewsList(APIView):
         url = 'https://newsapi.org/v2/everything?'
         params = {
             "q": "tech",
-            "sortBy": "publishedAt"
+            "sortBy": "publishedAt",
+            "pageSize": 100
         }
         headers = {"X-Api-Key": news_key}
 
