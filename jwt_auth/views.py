@@ -1,10 +1,10 @@
+import datetime
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
 from profess.models import User
 from django.conf import settings
 import jwt
-import datetime
 from .serializers import UserSerializer
 
 

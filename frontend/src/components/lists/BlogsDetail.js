@@ -22,7 +22,7 @@ class BlogDetail extends React.Component {
   render() {
     if(!this.state.blog) return null
     return(
-      <section className="section has-background-black">
+      <section className="section has-background-light">
         <div key={this.state.blog.id}>
           <Tile
             title={this.state.blog.title}

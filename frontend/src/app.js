@@ -7,6 +7,9 @@ import Navbar from './components/common/Navbar'
 import BlogIndex from './components/lists/BlogsIndex'
 import BlogDetail from './components/lists/BlogsDetail'
 import './style.scss'
+import Register from './components/Auth/Register'
+import Login from './components/Auth/Login'
+
 
 class App extends React.Component {
 
@@ -16,6 +19,8 @@ class App extends React.Component {
         <Navbar />
         <ToastContainer />
         <Switch>
+          <Route path= "/login" component={Login}/>
+          <Route path= "/register" component={Register}/>
           <Route path= "/blogs/:id" component={BlogDetail}/>
           <Route path= "/blogs" component={BlogIndex}/>
           <Route path= "/" component={Home}/>

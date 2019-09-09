@@ -19,7 +19,7 @@ class BlogsIndex extends React.Component {
 
   render() {
     return (
-      <section className="section has-background-black">
+      <section className="section has-background-white-ter">
         <div className="container">
           <div className="columns is-multiline">
             {this.state.blogs.map(blog =>
