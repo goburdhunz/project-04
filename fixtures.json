@@ -1,159 +1,101 @@
 [
 {
-  "model": "profess.news_interest",
+  "model": "profess.user",
   "pk": 1,
   "fields": {
-    "news_topic": "tech"
+    "password": "pbkdf2_sha256$150000$XfLheCpQTpeS$fzJf69/9tt0KGLA7TjA8EEFl7o1WZ51P0KA2UZEWnn0=",
+    "last_login": "2019-09-06T08:47:15Z",
+    "is_superuser": true,
+    "username": "zeeshangoburdhun",
+    "email": "goburdhunz@hotmail.co.uk",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-05T16:17:34Z",
+    "first_name": "zeeshan",
+    "last_name": "goburdhun",
+    "location": "",
+    "job_title": "",
+    "summary": "",
+    "image": "https://amp.insider.com/images/59fa0324b9fdbb32008b45dc-1136-766.jpg",
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [],
+    "event_type": [],
+    "job_sector": []
   }
 },
 {
-  "model": "profess.news_interest",
+  "model": "profess.user",
   "pk": 2,
   "fields": {
-    "news_topic": "finance"
+    "password": "pbkdf2_sha256$150000$LEBDfErmiUbt$4iX+577x4erlEgGrF2g1ZskhwcZgy6Rq7FSfnmRPZpE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "bill",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-05T16:23:44Z",
+    "first_name": "bill",
+    "last_name": "Bong",
+    "location": "",
+    "job_title": "",
+    "summary": "",
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1319403857i/7932486._UX1200_SR1200,630_.jpg",
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [],
+    "event_type": [],
+    "job_sector": []
   }
 },
 {
-  "model": "profess.news_interest",
+  "model": "profess.user",
   "pk": 3,
   "fields": {
-    "news_topic": "crime"
+    "password": "pbkdf2_sha256$150000$EzckDd8GYrA4$y6XVvTVMmmmGoHTbVuHLBKuuEQ5/0isNtcRXrESkcTM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "noor",
+    "email": "noor.desoof@wonton.se",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-05T20:26:15Z",
+    "first_name": "Noor",
+    "last_name": "Desoor",
+    "location": "",
+    "job_title": "",
+    "summary": "",
+    "image": "https://amp.insider.com/images/59fa032578f2b947008b45e6-960-655.jpg",
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [],
+    "event_type": [],
+    "job_sector": []
   }
 },
 {
-  "model": "profess.events_interest",
-  "pk": 1,
-  "fields": {
-    "event_type": "tech"
-  }
-},
-{
-  "model": "profess.events_interest",
-  "pk": 2,
-  "fields": {
-    "event_type": "networking"
-  }
-},
-{
-  "model": "profess.events_interest",
-  "pk": 3,
-  "fields": {
-    "event_type": "finance"
-  }
-},
-{
-  "model": "profess.events_interest",
+  "model": "profess.user",
   "pk": 4,
   "fields": {
-    "event_type": "UX"
-  }
-},
-{
-  "model": "profess.jobs_interest",
-  "pk": 1,
-  "fields": {
-    "job_sector": "tech"
-  }
-},
-{
-  "model": "profess.jobs_interest",
-  "pk": 2,
-  "fields": {
-    "job_sector": "testing"
-  }
-},
-{
-  "model": "profess.jobs_interest",
-  "pk": 3,
-  "fields": {
-    "job_sector": "finance"
-  }
-},
-{
-  "model": "profess.comment",
-  "pk": 1,
-  "fields": {
-    "title": "Soooo truuuee",
-    "content": "Very helpful and useful tips",
-    "user": 2,
-    "created_at": "2019-09-05T14:27:02.466Z",
-    "blogs": [
-      1
-    ]
-  }
-},
-{
-  "model": "profess.comment",
-  "pk": 2,
-  "fields": {
-    "title": "best bootcamp tips",
-    "content": "Bit pricy and spicy",
-    "user": 1,
-    "created_at": "2019-09-05T14:28:53.268Z",
-    "blogs": [
-      2
-    ]
-  }
-},
-{
-  "model": "profess.blog",
-  "pk": 1,
-  "fields": {
-    "title": "best bootcamp tips",
-    "created_by": 1,
-    "blog_content": "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more re",
-    "created_at": "2019-09-05T14:26:17.226Z"
-  }
-},
-{
-  "model": "profess.blog",
-  "pk": 2,
-  "fields": {
-    "title": "great tips",
-    "created_by": 2,
-    "blog_content": "Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their",
-    "created_at": "2019-09-05T14:28:35.208Z"
-  }
-},
-{
-  "model": "profess.user",
-  "pk": 1,
-  "fields": {
-    "name": "zeeshan goburdhun",
-    "location": "London",
-    "job_title": "Junior Software Engineer",
-    "summary": "Training at GA - On the path to JSE",
-    "image": "https://amp.insider.com/images/59b8495be517bd2c008b469c-1136-763.jpg",
-    "news_topic": [
-      1
-    ],
-    "event_type": [
-      1,
-      2
-    ],
-    "job_sector": [
-      1
-    ]
-  }
-},
-{
-  "model": "profess.user",
-  "pk": 2,
-  "fields": {
-    "name": "John Doe",
-    "location": "London",
-    "job_title": "UX Engineer",
-    "summary": "Want to move into finance",
+    "password": "pbkdf2_sha256$150000$lhLpOmS6RyOD$C81UmOfN5cLdNtRnlLu5W2woeRGz0jAh6rYAlYMak5k=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "bob",
+    "email": "bob@ball.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-06T15:22:43Z",
+    "first_name": "Bob",
+    "last_name": "Ball",
+    "location": "",
+    "job_title": "",
+    "summary": "",
     "image": "https://www.foliosociety.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/l/t/ltr_book.png",
-    "news_topic": [
-      2
-    ],
-    "event_type": [
-      3
-    ],
-    "job_sector": [
-      3
-    ]
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [],
+    "event_type": [],
+    "job_sector": []
   }
 }
-]

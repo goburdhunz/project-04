@@ -22,21 +22,43 @@ a img {
 h2, h4 {
     font-weight: 700;
     position: relative;
-    color: white;
     text-align:center;
     margin: 0;
     font-size: 100px;
     text-shadow: 0 2px 3px #000;
 }
 
-.title, .subtitle {
-  margin-top: 250px;
+.homeintro {
+  padding-top: 250px;
 }
+
+div.titleinfo {
+  display: flex;
+}
+
+.detailtitle {
+  margin-left: 10px;
+}
+
+.detailsub {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.contentdetail {
+  margin-left: 100px;
+}
+
 
 .video-container {
     height:100vh;
     width: 100vw;
     position: relative;
+}
+
+.content{
+text-overflow: ellipsis;
+
 }
 
 nav.navbar.has-background-white {

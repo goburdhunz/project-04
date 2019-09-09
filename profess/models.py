@@ -32,8 +32,9 @@ class Comment(models.Model):
         return f'{self.title}, {self.user} - {self.created_at}'
 
 class Blog(models.Model):
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=100)
     created_by = models.ForeignKey('User', related_name='blogs', on_delete=models.CASCADE)
+    image = models.CharField(max_length=200)
     blog_content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 

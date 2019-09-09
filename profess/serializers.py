@@ -34,7 +34,7 @@ class BlogSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Blog
-        fields = ('id', 'title', 'created_by', 'blog_content', 'created_at', 'comments')
+        fields = ('id', 'title', 'created_by', 'image', 'blog_content', 'created_at', 'comments')
 
 class PopulatedUserSerializer(UserSerializer):
 
@@ -84,4 +84,4 @@ class PopulatedBlogSerializer(BlogSerializer):
 
     class Meta(BlogSerializer.Meta):
 
-        fields = ('id', 'title', 'created_by', 'blog_content', 'created_at', 'comments',)
+        fields = ('id', 'title', 'created_by', 'image', 'blog_content', 'created_at', 'comments',)
