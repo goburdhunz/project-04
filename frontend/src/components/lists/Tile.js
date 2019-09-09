@@ -14,10 +14,13 @@ const Tile = ({title, author, authorImage, image, content})=> {
             <p className="title detailtitle">{title}</p>
           </div>
           <p className="subtitle detailsub">By {author}</p>
+          <hr />
           <figure className="image is-256x256">
             <img src={image}/>
           </figure>
-          <ReactMarkdown source={content} />
+          <hr />
+          <p className="content"></p>
+          <ReactMarkdown source={content} className="content"/>
         </article>
       </div>
     </div>
