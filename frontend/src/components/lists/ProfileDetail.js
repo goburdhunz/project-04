@@ -33,7 +33,7 @@ class ProfileDetail extends React.Component {
     if (!this.state.user) return null
     console.log(this.state.user)
     return (
-      <section className="section">
+      <section className="section has-background-light">
         <div className="container">
           <div className="tile is-ancestor">
             <div className="tile is-parent is-3">
@@ -58,12 +58,10 @@ class ProfileDetail extends React.Component {
             </div>
             <div className="tile is-parent is-3">
               <article className="tile is-child box">
-                <article className="tile is-child box">
-                  <article className="tile is-child box has-background-light">
-                    <p className="title is-4">News Topics Interested In</p>
-                    <p className="subtitle is-6 box">{this.state.user.news_topic[0].news_topic}</p>
-                    <p className="subtitle is-6 box">{this.state.user.news_topic[1].news_topic}</p>
-                  </article>
+                <article className="tile is-child box has-background-light">
+                  <p className="title is-4">News Topics Interested In</p>
+                  <p className="subtitle is-6 box">{this.state.user.news_topic[0].news_topic}</p>
+                  <p className="subtitle is-6 box">{this.state.user.news_topic[1].news_topic}</p>
                 </article>
               </article>
             </div>
@@ -104,8 +102,8 @@ class ProfileDetail extends React.Component {
               <div className="tile is-parent is-8">
                 <article className="tile is-child box">
                   <article className="tile is-child box has-background-light">
-                    <p className="title">Wide column</p>
-                    <p className="subtitle">Aligned with the right column</p>
+                    <img src={this.state.user.blogs[1].image}/>
+                    <p className="title is-4">{this.state.user.blogs[1].title}</p>
                     <div className="content">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
                     </div>
