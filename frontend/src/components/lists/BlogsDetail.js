@@ -14,7 +14,7 @@ class BlogDetail extends React.Component {
 
 
   componentDidMount() {
-    axios.get(`http://localhost:8000/api/blogs/${this.props.match.params.id}`)
+    axios.get(`/api/blogs/${this.props.match.params.id}`)
       .then(res => this.setState({ blog: res.data}))
   }
 

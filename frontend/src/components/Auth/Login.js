@@ -31,6 +31,7 @@ class Login extends React.Component {
     axios.post('api/login/', this.state.formData)
       .then(res => {
         Auth.setToken(res.data.token)
+        Auth.setUserId(res.data.user)
         this.props.history.push('/blogs')
         toast.success(res.data.message)
       })

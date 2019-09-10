@@ -2,6 +2,7 @@ import os
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.status import HTTP_201_CREATED, HTTP_422_UNPROCESSABLE_ENTITY, HTTP_204_NO_CONTENT
+from django.http import Http404
 import requests
 from .models import NewsInterest, EventsInterest, JobsInterest, User, Comment, Blog
 reed_key = os.getenv('REED_API_KEY')
@@ -16,6 +17,30 @@ class UserDetailView(APIView):
         user = User.objects.get(pk=pk)
         serializer = PopulatedUserSerializer(user)
         return Response(serializer.data)
+
+    def get_user(self, pk):
+        try:
+            user = User.objects.get(pk=pk)
+        except User.DoesNotExist:
+            raise Http404
+
+        return user
+
+    def put(self, request, pk):
+        user = self.get_user(pk)
+        serializer = UserSerializer(user, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=201)
+
+        return Response(serializer.errors, status=422)
+
+
+    def delete(self, _request, pk):
+        user = self.get_user(pk)
+        user.delete()
+        return Response(status=204)
+
 
 class BlogList(APIView):
 

@@ -5,12 +5,23 @@ class Auth {
     localStorage.setItem('token', token)
   }
 
+  static setUserId(user) {
+    localStorage.setItem('user', user)
+  }
+
+  static getUserId() {
+    return localStorage.getItem('user')
+  }
+
   static getToken() {
     return localStorage.getItem('token')
   }
 
   static removeToken() {
     localStorage.removeItem('token')
+  }
+  static removeUserId() {
+    localStorage.removeItem('user')
   }
 
   static getPayload() {

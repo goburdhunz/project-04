@@ -1,8 +1,15 @@
 from rest_framework import serializers
 from .models import NewsInterest, EventsInterest, JobsInterest, User, Comment, Blog
 
+class BlogSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Blog
+        fields = ('id', 'title', 'created_by', 'image', 'created_at', 'comments')
 
 class UserSerializer(serializers.ModelSerializer):
+
+    blogs = BlogSerializer(many=True, read_only=True)
 
     class Meta:
         model = User
@@ -30,18 +37,12 @@ class JobSerializer(serializers.ModelSerializer):
         fields = ('id', 'job_sector',)
 
 
-class BlogSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Blog
-        fields = ('id', 'title', 'created_by', 'image', 'blog_content', 'created_at', 'comments')
 
 class PopulatedUserSerializer(UserSerializer):
 
     news_topic = NewsSerializer(many=True)
     job_sector = JobSerializer(many=True)
     event_type = EventSerializer(many=True)
-    blogs = BlogSerializer(many=True)
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -84,4 +85,4 @@ class PopulatedBlogSerializer(BlogSerializer):
 
     class Meta(BlogSerializer.Meta):
 
-        fields = ('id', 'title', 'created_by', 'image', 'blog_content', 'created_at', 'comments',)
+        fields = ('id', 'title', 'created_by', 'image', 'created_at', 'comments', 'blog_content')
