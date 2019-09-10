@@ -31,7 +31,6 @@ class Login extends React.Component {
     axios.post('api/login/', this.state.formData)
       .then(res => {
         Auth.setToken(res.data.token)
-        this.closeModal()
         this.props.history.push('/blogs')
         toast.success(res.data.message)
       })
@@ -43,6 +42,7 @@ class Login extends React.Component {
 
 
   render() {
+    console.log(this.state.formData)
     return (
       <section className="section has-background-white-ter">
         <div className="container registercontainer">

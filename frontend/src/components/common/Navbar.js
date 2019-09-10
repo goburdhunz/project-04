@@ -1,13 +1,19 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
+import Auth from '../../lib/Auth'
 
 class Navbar extends React.Component {
 
   constructor() {
     super()
     this.state = {}
+    this.logout = this.logout.bind(this)
   }
 
+  logout() {
+    Auth.removeToken()
+    this.props.history.push('/')
+  }
 
   render() {
     return (
@@ -24,9 +30,9 @@ class Navbar extends React.Component {
             </div>
 
             <div className="navbar-end">
-              <Link to="/register/" className="navbar-item">Register</Link>
-              <Link to="/login" className="navbar-item">Login</Link>
-              <a className="navbar-item">Logout</a>
+              {!Auth.isAuthenticated() && <Link to="/register" className="navbar-item">Register</Link>}
+              {!Auth.isAuthenticated() && <Link to="/login" className="navbar-item">Login</Link>}
+              {Auth.isAuthenticated() && <a onClick={this.logout} className="navbar-item">Logout</a>}
             </div>
           </div>
         </div>

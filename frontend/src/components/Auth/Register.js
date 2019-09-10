@@ -30,10 +30,12 @@ class Register extends React.Component {
 
     axios.post('api/register/', this.state.formData)
       .then(res => {
+        console.log(res.data.message)
         toast.success(res.data.message)
         this.props.history.push('/login')
       })
-      .catch(err => this.setState({ errors: err.response.data.errors}))
+      .catch(err =>
+        this.setState({ errors: err.response.data}))
   }
 
   render() {
@@ -58,6 +60,20 @@ class Register extends React.Component {
                         />
                       </div>
                       {this.state.errors.username && <small className="help is-danger">{this.state.errors.username}</small>}
+                    </div>
+
+                    <div className="field">
+                      <label className="label">Email</label>
+                      <div className="control">
+                        <input
+                          className="input"
+                          type= "email"
+                          name="email"
+                          placeholder="eg: profess@readme.com"
+                          onChange={this.handleChange}
+                        />
+                      </div>
+                      {this.state.errors.email && <small className="help is-danger">{this.state.errors.email}</small>}
                     </div>
 
                     <div className="field">

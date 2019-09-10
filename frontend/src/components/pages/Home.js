@@ -13,7 +13,7 @@ const Home = () => {
         </video>
         <div className="homeintro">
           <h2 className="title is-size-1 has-text-white">HELLO, WELCOME TO PROFESS</h2>
-          <h4 className="subtitle is-size-4 has-text-white">Blog and consume content that you care about</h4>
+          <h4 className="subtitle is-size-4 has-text-white">Consume content that <i>you</i> care about</h4>
         </div>
       </div>
       <footer className="footer has-background-white">

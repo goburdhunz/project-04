@@ -95,12 +95,12 @@ footer {
 
 .registercontainer {
   display: flex;
-  margin-top: 20px;
 }
 
 .registerbox {
   box-shadow: 5px 10px;
 }
+
 .registerform {
   width: 350px;
   height: 370px;
@@ -121,23 +121,17 @@ border-radius: 10px;
 
 .registerbutton {
   width: 350px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
-label.label {
-  padding-bottom:10px;
-}
-
-input.input {
-  margin-bottom: 10px;
-}
 
 .loginsubmit {
 width: 360px;
+margin-top: 5px;
 }
 
 .emaillabel {
-padding-top: 80px;
+padding-top: 100px;
 }
 
 .usernamelabel {
