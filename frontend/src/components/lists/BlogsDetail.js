@@ -20,13 +20,15 @@ class BlogDetail extends React.Component {
 
 
   render() {
+    console.log(this.state.blog)
     if(!this.state.blog) return null
     return(
       <section className="section has-background-light">
         <div key={this.state.blog.id}>
           <Tile
             title={this.state.blog.title}
-            author= {this.state.blog.created_by.first_name}
+            authorFirstname={this.state.blog.created_by.first_name}
+            authorLastname={this.state.blog.created_by.last_name}
             authorImage={this.state.blog.created_by.image}
             image={this.state.blog.image}
             content={this.state.blog.blog_content}

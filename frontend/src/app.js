@@ -7,6 +7,7 @@ import Navbar from './components/common/Navbar'
 import BlogIndex from './components/lists/BlogsIndex'
 import BlogDetail from './components/lists/BlogsDetail'
 import ProfileDetail from './components/lists/ProfileDetail'
+import UpdateProfile from './components/lists/UpdateProfile'
 import './style.scss'
 import Register from './components/Auth/Register'
 import Login from './components/Auth/Login'
@@ -22,8 +23,6 @@ class App extends React.Component {
 
 
   render() {
-    const user = this.getLoggedInUser()
-    console.log(user)
     return (
       <HashRouter>
         <Navbar />
@@ -31,6 +30,7 @@ class App extends React.Component {
           position="top-center"
         />
         <Switch>
+          <Route path="/profile/:id/edit" component={UpdateProfile} />
           <Route path= "/profile" component={ProfileDetail}/>
           <Route path= "/blogs/:id" component={BlogDetail}/>
           <Route path= "/blogs" component={BlogIndex}/>

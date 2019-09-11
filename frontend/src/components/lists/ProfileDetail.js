@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Auth from '../../lib/Auth'
-
+import {Link} from 'react-router-dom'
 
 
 class ProfileDetail extends React.Component {
@@ -14,12 +14,10 @@ class ProfileDetail extends React.Component {
 
   }
 
-
   getLoggedInUser() {
     const user = Auth.getUserId()
     return user
   }
-
 
 
   componentDidMount() {
@@ -31,7 +29,6 @@ class ProfileDetail extends React.Component {
 
   render() {
     if (!this.state.user) return null
-    console.log(this.state.user)
     return (
       <section className="section has-background-light">
         <div className="container">
@@ -39,8 +36,13 @@ class ProfileDetail extends React.Component {
             <div className="tile is-parent is-3">
               <article className="tile is-child box">
                 <article className="tile is-child box has-background-light">
-                  <img src={this.state.user.image}/>
+                  <img className="profileimage" src={this.state.user.image}/>
                 </article>
+
+                <div className ="buttons editbutton">
+                  <Link to={`/profile/${this.state.user.id}/edit`} className="button has-background-success">Edit</Link>
+                </div>
+
               </article>
             </div>
             <div className="tile is-parent">
@@ -131,24 +133,6 @@ class ProfileDetail extends React.Component {
 
     )
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 export default ProfileDetail

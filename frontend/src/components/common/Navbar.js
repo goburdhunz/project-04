@@ -12,7 +12,7 @@ class Navbar extends React.Component {
 
   logout() {
     Auth.removeToken()
-    Auth.removeUserId() 
+    Auth.removeUserId()
     this.props.history.push('/')
   }
 
@@ -27,7 +27,7 @@ class Navbar extends React.Component {
           <div className='navbar-menu'>
             <div className= "navbar-start">
               <Link to="/blogs/" className="navbar-item">Blogs</Link>
-              <Link to="/" className="navbar-item">Profile</Link>
+              {Auth.isAuthenticated() && <Link to="/profile" className="navbar-item">Profile</Link>}
             </div>
 
             <div className="navbar-end">

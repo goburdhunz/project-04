@@ -2,7 +2,7 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 
 
-const Tile = ({title, author, authorImage, image, content})=> {
+const Tile = ({title, authorFirstname, authorLastname, authorImage, image, content})=> {
   return (
     <div className="tile is-ancestor">
       <div className="tile is-parent is-10 contentdetail">
@@ -13,7 +13,7 @@ const Tile = ({title, author, authorImage, image, content})=> {
             </figure>
             <p className="title detailtitle">{title}</p>
           </div>
-          <p className="subtitle detailsub">By {author}</p>
+          <p className="subtitle detailsub">By {authorFirstname} {authorLastname}</p>
           <hr />
           <figure className="image is-256x256">
             <img src={image}/>

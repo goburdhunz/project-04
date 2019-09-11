@@ -27,7 +27,8 @@ class BlogsIndex extends React.Component {
                 <Link to={`/blogs/${blog.id}`}>
                   <Cards
                     title={blog.title}
-                    author= {blog.created_by.first_name}
+                    authorFirstname= {blog.created_by.first_name}
+                    authorLastname= {blog.created_by.last_name}
                     authorImage={blog.created_by.image}
                     image={blog.image}
                     content={blog.blog_content}

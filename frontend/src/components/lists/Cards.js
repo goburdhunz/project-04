@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Cards = ({title, author, authorImage, image}) => {
+const Cards = ({title, authorFirstname, authorLastname,authorImage, image}) => {
   return (
     <div className="card">
       <div className="card-image">
@@ -18,7 +18,7 @@ const Cards = ({title, author, authorImage, image}) => {
           </div>
           <div className="media-content">
             <p className="title is-4">{title}</p>
-            <p className="subtitle is-6">By {author}</p>
+            <p className="subtitle is-6">By {authorFirstname} {authorLastname}</p>
           </div>
         </div>
       </div>
