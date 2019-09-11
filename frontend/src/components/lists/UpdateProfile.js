@@ -107,7 +107,7 @@ class UpdateProfile extends React.Component {
                   <p className="control is-expanded">
                     <input className="input is-success" type="text"
                       onChange={this.handleChange}
-                      name="location" defaultValue={location || ''} placeholder="e.g London"/>
+                      name="location" defaultValue={this.state.formData.location || ''} placeholder="e.g London"/>
                   </p>
                 </div>
               </div>

@@ -15,6 +15,7 @@ import Login from './components/Auth/Login'
 import Auth from './lib/Auth'
 import JobsIndex from './components/lists/JobsIndex'
 import EventsIndex from './components/lists/EventsIndex'
+import NewssIndex from './components/lists/NewssIndex'
 
 
 class App extends React.Component {
@@ -34,6 +35,7 @@ class App extends React.Component {
         />
         <Switch>
           <Route path= "/myevents" component={EventsIndex}/>
+          <Route path= "/mynews" component={NewssIndex}/>
           <Route path= "/myjobs" component={JobsIndex}/>
           <Route path= "/profile/:id" component={UpdateProfile} />
           <Route path= "/profile" component={ProfileDetail}/>

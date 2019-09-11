@@ -25,7 +25,7 @@ class EventsIndex extends React.Component {
               <div className="column is-half-tablet is-one-half-desktop" key={event.id}>
                 <div className="card jobcard">
                   <header className="card-header">
-                    <p className="card-header-title">
+                    <p className="card-header-title jobtitle">
                       {event.name.text}
                     </p>
                   </header>

@@ -25,7 +25,7 @@ class JobsIndex extends React.Component {
               <div className="column is-half-tablet is-one-third-desktop" key={job.jobId}>
                 <div className="card jobcard">
                   <header className="card-header">
-                    <p className="card-header-title">
+                    <p className="card-header-title jobtitle">
                       {job.jobTitle}
                     </p>
                   </header>
