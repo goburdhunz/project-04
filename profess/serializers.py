@@ -5,7 +5,7 @@ class BlogSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Blog
-        fields = ('id', 'title', 'created_by', 'image', 'created_at', 'comments')
+        fields = ('id', 'title', 'created_by', 'image', 'blog_content')
 
 class UserSerializer(serializers.ModelSerializer):
 
@@ -80,8 +80,8 @@ class PopulatedJobSerializer(JobSerializer):
 
 class PopulatedBlogSerializer(BlogSerializer):
 
-    comments = CommentSerializer(many=True)
-    created_by = PopulatedUserSerializer()
+    comments = CommentSerializer(many=True, read_only=True)
+    created_by = PopulatedUserSerializer(read_only=True)
 
     class Meta(BlogSerializer.Meta):
 

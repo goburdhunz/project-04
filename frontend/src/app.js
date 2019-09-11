@@ -6,6 +6,7 @@ import Home from './components/pages/Home'
 import Navbar from './components/common/Navbar'
 import BlogIndex from './components/lists/BlogsIndex'
 import BlogDetail from './components/lists/BlogsDetail'
+import BlogCreate from './components/lists/BlogsCreate'
 import ProfileDetail from './components/lists/ProfileDetail'
 import UpdateProfile from './components/lists/UpdateProfile'
 import './style.scss'
@@ -30,8 +31,10 @@ class App extends React.Component {
           position="top-center"
         />
         <Switch>
-          <Route path="/profile/:id/edit" component={UpdateProfile} />
+
+          <Route path= "/profile/:id" component={UpdateProfile} />
           <Route path= "/profile" component={ProfileDetail}/>
+          <Route path= "/blogs/new" component={BlogCreate}/>
           <Route path= "/blogs/:id" component={BlogDetail}/>
           <Route path= "/blogs" component={BlogIndex}/>
           <Route path= "/login" component={Login}/>

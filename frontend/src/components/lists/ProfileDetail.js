@@ -39,8 +39,8 @@ class ProfileDetail extends React.Component {
                   <img className="profileimage" src={this.state.user.image}/>
                 </article>
 
-                <div className ="buttons editbutton">
-                  <Link to={`/profile/${this.state.user.id}/edit`} className="button has-background-success">Edit</Link>
+                <div className ="buttons">
+                  <Link to={`/profile/${this.state.user.id}/`} className="button has-background-success editbutton">Edit</Link>
                 </div>
 
               </article>

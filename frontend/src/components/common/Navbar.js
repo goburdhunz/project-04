@@ -27,6 +27,7 @@ class Navbar extends React.Component {
           <div className='navbar-menu'>
             <div className= "navbar-start">
               <Link to="/blogs/" className="navbar-item">Blogs</Link>
+              <Link to="/blogs/new" className="navbar-item">Create Blog</Link>
               {Auth.isAuthenticated() && <Link to="/profile" className="navbar-item">Profile</Link>}
             </div>
 

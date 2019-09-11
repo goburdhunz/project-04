@@ -142,9 +142,43 @@ padding-top: 100px;
 border-radius: 100px;
 }
 
-a.button {
+.editbutton {
   margin-top:30px;
   width:260px;
+}
+
+.formbox {
+  width: 100vw;
+}
+
+.formcontainer {
+  margin-right: 100px;
+}
+
+.eventeditlist {
+  margin-right: 350px;
+}
+
+.jobeditlist {
+  margin-right: 180px;
+}
+
+.newseditlist {
+  margin-right: 310px;
+}
+
+label.checkbox {
+  margin-right:10px;
+}
+
+.newblogsubmit{
+  width: 200px;
+  margin-top: 20px;
+}
+
+.cancelcreateblog {
+  width: 200px;
+  margin-top: 20px;
 }
 
 @import 'bulma'

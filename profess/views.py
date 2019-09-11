@@ -44,10 +44,22 @@ class UserDetailView(APIView):
 
 class BlogList(APIView):
 
+    # permission_classes = (IsAuthenticatedOrReadOnly,)
+
     def get(self, _request):
         blogs = Blog.objects.all()
         serializer = PopulatedBlogSerializer(blogs, many=True)
         return Response(serializer.data)
+
+
+    def post(self, request):
+        serializer = BlogSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            # serializer.save(created_by=request.user)
+            return Response(serializer.data, status=201)
+
+        return Response(serializer.errors, status=422)
 
 class BlogDetailView(APIView):
 
@@ -55,6 +67,7 @@ class BlogDetailView(APIView):
         blog = Blog.objects.get(pk=pk)
         serializer = PopulatedBlogSerializer(blog)
         return Response(serializer.data)
+
 
 class JobList(APIView):
 

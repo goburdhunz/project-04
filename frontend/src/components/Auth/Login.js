@@ -43,7 +43,6 @@ class Login extends React.Component {
 
 
   render() {
-    console.log(this.state.formData)
     return (
       <section className="section has-background-white-ter">
         <div className="container registercontainer">
