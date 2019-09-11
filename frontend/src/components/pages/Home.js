@@ -18,10 +18,10 @@ const Home = () => {
       </div>
       <footer className="footer has-background-white">
         <nav className="navbar has-background-white">
-          <SocialIcon className="icon1" url="https://www.linkedin.com/in/zeeshan-goburdhun/"/>
-          <SocialIcon className="icon2" url="https://www.facebook.com/"/>
-          <SocialIcon className="icon3" url="https://twitter.com/"/>
-          <SocialIcon className="icon4" url="https://www.instagram.com"/>
+          <SocialIcon className="icon1" target="_blank" rel="noopener noreferrer" url="https://www.linkedin.com/in/zeeshan-goburdhun/"/>
+          <SocialIcon className="icon2" target="_blank" rel="noopener noreferrer" url="https://www.facebook.com/"/>
+          <SocialIcon className="icon3" target="_blank" rel="noopener noreferrer" url="https://twitter.com/"/>
+          <SocialIcon className="icon4" target="_blank" rel="noopener noreferrer" url="https://www.instagram.com"/>
         </nav>
       </footer>
     </div>

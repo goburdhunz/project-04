@@ -7,7 +7,7 @@ class EventsIndex extends React.Component {
   constructor() {
     super()
 
-    this.state = {events: [] }
+    this.state = {}
   }
 
   componentDidMount() {
@@ -17,6 +17,7 @@ class EventsIndex extends React.Component {
 
 
   render() {
+    if (!this.state.events) return <h1 className="loadertext"><span><img width='500px' height='500px' src="https://media1.giphy.com/media/5wJ8ZN7or1N1m/source.gif"/></span>We have our fastest hamster grabbing your content</h1>
     return(
       <section className="section has-background-light">
         <div className="container is-family-monospace">
