@@ -32,7 +32,7 @@ class Login extends React.Component {
       .then(res => {
         Auth.setToken(res.data.token)
         Auth.setUserId(res.data.user)
-        this.props.history.push('/blogs')
+        this.props.history.push(`/profile/${res.data.user}`)
         toast.success(res.data.message)
       })
       .catch(() => {

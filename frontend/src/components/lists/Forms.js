@@ -70,7 +70,10 @@ const Forms = ({firstname,lastname, location,image, jobtitle, summary, jobsector
               <label className="label">Event type</label>
             </div>
             <label className="checkbox">
-              <input id='7' type="checkbox"/>
+              <input
+                id='7' checked={this.checkForIngredient('Beef') || false}
+                onChange={this.handleIngredientCheckbox} type="checkbox"
+              />
               Big Data
             </label>
             <label className="checkbox">

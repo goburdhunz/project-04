@@ -13,6 +13,8 @@ import './style.scss'
 import Register from './components/Auth/Register'
 import Login from './components/Auth/Login'
 import Auth from './lib/Auth'
+import JobsIndex from './components/lists/JobsIndex'
+import EventsIndex from './components/lists/EventsIndex'
 
 
 class App extends React.Component {
@@ -31,7 +33,8 @@ class App extends React.Component {
           position="top-center"
         />
         <Switch>
-
+          <Route path= "/myevents" component={EventsIndex}/>
+          <Route path= "/myjobs" component={JobsIndex}/>
           <Route path= "/profile/:id" component={UpdateProfile} />
           <Route path= "/profile" component={ProfileDetail}/>
           <Route path= "/blogs/new" component={BlogCreate}/>
