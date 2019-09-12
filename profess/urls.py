@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import JobList, BlogDetailView, UserDetailView, BlogList, EventList, NewsList, EventTypesList
+from .views import JobList, BlogDetailView, UserDetailView, BlogList, EventList, NewsList, EventTypesList, NewsTopicList, JobSectorList
 
 
 urlpatterns = [
@@ -10,4 +10,6 @@ urlpatterns = [
     path('myevents/', EventList.as_view(), name='event-list'),
     path('mynews/', NewsList.as_view(), name='news-list'),
     path('event_types/', EventTypesList.as_view(), name='event-type-list'),
+    path('news_topics/', NewsTopicList.as_view(), name='news-topic-list'),
+    path('job_sectors/', JobSectorList.as_view(), name='jobs-sector-list'),
 ]

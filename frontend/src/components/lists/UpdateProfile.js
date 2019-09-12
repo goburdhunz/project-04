@@ -17,6 +17,8 @@ class UpdateProfile extends React.Component {
         news_topic: []
       },
       eventTypes: [],
+      newsTopics: [],
+      jobsSector: [],
       errors: {}
     }
     this.handleChange = this.handleChange.bind(this)
@@ -36,7 +38,9 @@ class UpdateProfile extends React.Component {
 
     Promise.props({
       formData: axios.get(`/api/profile/${userId}/`).then(res => res.data),
-      eventTypes: axios.get('/api/event_types/').then(res => res.data)
+      eventTypes: axios.get('/api/event_types/').then(res => res.data),
+      newsTopics: axios.get('/api/news_topics/').then(res => res.data),
+      jobsSector: axios.get('/api/job_sectors/').then(res => res.data)
     })
       .then(data => this.setState(data))
   }
@@ -91,7 +95,6 @@ class UpdateProfile extends React.Component {
 
 
   render() {
-    console.log(this.state.formData)
     return(
       <section className="section formbox has-background-light">
         <div className="containers formcontainer">

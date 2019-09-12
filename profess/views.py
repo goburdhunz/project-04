@@ -91,7 +91,21 @@ class EventTypesList(APIView):
 
         return Response(serializer.data)
 
+class NewsTopicList(APIView):
 
+    def get(self, _request):
+        news_topics = NewsInterest.objects.all()
+        serializer = NewsSerializer(news_topics, many=True)
+
+        return Response(serializer.data)
+
+class JobSectorList(APIView):
+
+    def get(self, _request):
+        job_sector = JobsInterest.objects.all()
+        serializer = JobSerializer(job_sector, many=True)
+
+        return Response(serializer.data)
 
 class EventList(APIView):
 
