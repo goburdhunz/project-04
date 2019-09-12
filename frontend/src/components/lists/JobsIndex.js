@@ -11,7 +11,7 @@ class JobsIndex extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/api/myjobs')
+    axios.get('/api/myjobs')
       .then(res => this.setState({ jobs: res.data}))
   }
 

@@ -1,3 +1,5 @@
+import django_heroku
+
 """
 Django settings for project project.
 
@@ -135,3 +137,5 @@ REST_FRAMEWORK = {
         # 'rest_framework.authentication.SessionAuthentication', # comment out this line
     ],
 }
+
+django_heroku.settings(locals())

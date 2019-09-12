@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('profess.urls')),
     path('api/', include('jwt_auth.urls')),
-    path('auth/', include('rest_framework.urls'))
+    path('auth/', include('rest_framework.urls')),
+    path('', include('frontend.urls'))
 ]

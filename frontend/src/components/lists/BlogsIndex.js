@@ -12,7 +12,7 @@ class BlogsIndex extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/api/blogs')
+    axios.get('/api/blogs/')
       .then(res => this.setState({ blogs: res.data}))
   }
 

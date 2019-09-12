@@ -11,7 +11,7 @@ class EventsIndex extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/api/mynews')
+    axios.get('/api/mynews')
       .then(res => this.setState({ news: res.data}))
   }
 

@@ -31,7 +31,6 @@ class BlogsCreate extends React.Component {
 
 
   render() {
-    console.log(this.state.formData)
     return(
       <section className="section has-background-light">
         <div className="container">
