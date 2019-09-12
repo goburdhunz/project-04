@@ -49,6 +49,13 @@
   }
 },
 {
+  "model": "profess.newsinterest",
+  "pk": 8,
+  "fields": {
+    "news_topic": "Sport"
+  }
+},
+{
   "model": "profess.eventsinterest",
   "pk": 1,
   "fields": {
@@ -98,6 +105,13 @@
   }
 },
 {
+  "model": "profess.eventsinterest",
+  "pk": 8,
+  "fields": {
+    "event_type": "Sport"
+  }
+},
+{
   "model": "profess.jobsinterest",
   "pk": 1,
   "fields": {
@@ -122,14 +136,14 @@
   "model": "profess.jobsinterest",
   "pk": 4,
   "fields": {
-    "job_sector": "Public Relations"
+    "job_sector": "PR"
   }
 },
 {
   "model": "profess.jobsinterest",
   "pk": 5,
   "fields": {
-    "job_sector": "Human Resources"
+    "job_sector": "HR"
   }
 },
 {
@@ -144,6 +158,13 @@
   "pk": 7,
   "fields": {
     "job_sector": "Advertising"
+  }
+},
+{
+  "model": "profess.jobsinterest",
+  "pk": 8,
+  "fields": {
+    "job_sector": "Charity"
   }
 },
 {
@@ -169,29 +190,18 @@
     "news_topic": [
       1,
       2,
-      3,
-      4,
-      5,
-      6,
-      7
+      6
     ],
     "event_type": [
       1,
       2,
-      3,
-      4,
       5,
-      6,
       7
     ],
     "job_sector": [
       1,
       2,
-      3,
-      4,
-      5,
-      6,
-      7
+      8
     ]
   }
 },
