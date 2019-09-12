@@ -1,47 +1,218 @@
 [
 {
+  "model": "profess.newsinterest",
+  "pk": 1,
+  "fields": {
+    "news_topic": "Tech"
+  }
+},
+{
+  "model": "profess.newsinterest",
+  "pk": 2,
+  "fields": {
+    "news_topic": "Finance"
+  }
+},
+{
+  "model": "profess.newsinterest",
+  "pk": 3,
+  "fields": {
+    "news_topic": "Advertising"
+  }
+},
+{
+  "model": "profess.newsinterest",
+  "pk": 4,
+  "fields": {
+    "news_topic": "Environment"
+  }
+},
+{
+  "model": "profess.newsinterest",
+  "pk": 5,
+  "fields": {
+    "news_topic": "Politics"
+  }
+},
+{
+  "model": "profess.newsinterest",
+  "pk": 6,
+  "fields": {
+    "news_topic": "Science"
+  }
+},
+{
+  "model": "profess.newsinterest",
+  "pk": 7,
+  "fields": {
+    "news_topic": "Education"
+  }
+},
+{
+  "model": "profess.eventsinterest",
+  "pk": 1,
+  "fields": {
+    "event_type": "Tech"
+  }
+},
+{
+  "model": "profess.eventsinterest",
+  "pk": 2,
+  "fields": {
+    "event_type": "Networking"
+  }
+},
+{
+  "model": "profess.eventsinterest",
+  "pk": 3,
+  "fields": {
+    "event_type": "Charity"
+  }
+},
+{
+  "model": "profess.eventsinterest",
+  "pk": 4,
+  "fields": {
+    "event_type": "Language"
+  }
+},
+{
+  "model": "profess.eventsinterest",
+  "pk": 5,
+  "fields": {
+    "event_type": "Finance"
+  }
+},
+{
+  "model": "profess.eventsinterest",
+  "pk": 6,
+  "fields": {
+    "event_type": "Social"
+  }
+},
+{
+  "model": "profess.eventsinterest",
+  "pk": 7,
+  "fields": {
+    "event_type": "Big Data"
+  }
+},
+{
+  "model": "profess.jobsinterest",
+  "pk": 1,
+  "fields": {
+    "job_sector": "Tech"
+  }
+},
+{
+  "model": "profess.jobsinterest",
+  "pk": 2,
+  "fields": {
+    "job_sector": "Finance"
+  }
+},
+{
+  "model": "profess.jobsinterest",
+  "pk": 3,
+  "fields": {
+    "job_sector": "Marketing"
+  }
+},
+{
+  "model": "profess.jobsinterest",
+  "pk": 4,
+  "fields": {
+    "job_sector": "Public Relations"
+  }
+},
+{
+  "model": "profess.jobsinterest",
+  "pk": 5,
+  "fields": {
+    "job_sector": "Human Resources"
+  }
+},
+{
+  "model": "profess.jobsinterest",
+  "pk": 6,
+  "fields": {
+    "job_sector": "Consulting"
+  }
+},
+{
+  "model": "profess.jobsinterest",
+  "pk": 7,
+  "fields": {
+    "job_sector": "Advertising"
+  }
+},
+{
   "model": "profess.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$150000$XfLheCpQTpeS$fzJf69/9tt0KGLA7TjA8EEFl7o1WZ51P0KA2UZEWnn0=",
-    "last_login": "2019-09-06T08:47:15Z",
+    "password": "pbkdf2_sha256$150000$OJjEDKgd9z41$qrtZ04esEwA/7uQ1mu0LrLkJVUA/UMGBrpH7XqMI3Ho=",
+    "last_login": "2019-09-09T15:20:43.481Z",
     "is_superuser": true,
     "username": "zeeshangoburdhun",
     "email": "goburdhunz@hotmail.co.uk",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2019-09-05T16:17:34Z",
-    "first_name": "zeeshan",
-    "last_name": "goburdhun",
-    "location": "",
-    "job_title": "",
-    "summary": "",
-    "image": "https://amp.insider.com/images/59fa0324b9fdbb32008b45dc-1136-766.jpg",
+    "date_joined": "2019-09-09T11:28:16Z",
+    "first_name": "Zeeshan",
+    "last_name": "Goburdhun",
+    "location": "London",
+    "job_title": "Software person",
+    "summary": "Professional show eater and exercise dodger",
+    "image": "https://media.licdn.com/dms/image/C4D03AQE__3vQGnFwfg/profile-displayphoto-shrink_200_200/0?e=1573689600&v=beta&t=ZhemB4TWD4okV5nZN7QJq3ESq_n5p9hniZsqi5pKdv8",
     "groups": [],
     "user_permissions": [],
-    "news_topic": [],
-    "event_type": [],
-    "job_sector": []
+    "news_topic": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "event_type": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "job_sector": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
   }
 },
 {
   "model": "profess.user",
   "pk": 2,
   "fields": {
-    "password": "pbkdf2_sha256$150000$LEBDfErmiUbt$4iX+577x4erlEgGrF2g1ZskhwcZgy6Rq7FSfnmRPZpE=",
+    "password": "pbkdf2_sha256$150000$Kp4fldyNglbl$xmpOv9LuV9TbfZhdhCHg3XNU7mNrefzPKdmVNgJWQns=",
     "last_login": null,
     "is_superuser": false,
-    "username": "bill",
-    "email": "",
+    "username": "Bill",
+    "email": "bill.bailey@gmail.com",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2019-09-05T16:23:44Z",
-    "first_name": "bill",
-    "last_name": "Bong",
+    "date_joined": "2019-09-09T11:29:42Z",
+    "first_name": "Bill",
+    "last_name": "Bailey",
     "location": "",
     "job_title": "",
     "summary": "",
-    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1319403857i/7932486._UX1200_SR1200,630_.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/RamNathKovind_%28cropped%29.jpg",
     "groups": [],
     "user_permissions": [],
     "news_topic": [],
@@ -53,20 +224,20 @@
   "model": "profess.user",
   "pk": 3,
   "fields": {
-    "password": "pbkdf2_sha256$150000$EzckDd8GYrA4$y6XVvTVMmmmGoHTbVuHLBKuuEQ5/0isNtcRXrESkcTM=",
+    "password": "pbkdf2_sha256$150000$ToDrS3TmOHA4$ph/WPCGyg5Q2AZW2N5CLSMrA+mMEA5Rk4Q+aFpsy2kI=",
     "last_login": null,
     "is_superuser": false,
-    "username": "noor",
+    "username": "noord",
     "email": "noor.desoof@wonton.se",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2019-09-05T20:26:15Z",
+    "date_joined": "2019-09-09T11:32:19Z",
     "first_name": "Noor",
-    "last_name": "Desoor",
+    "last_name": "Desoof",
     "location": "",
     "job_title": "",
     "summary": "",
-    "image": "https://amp.insider.com/images/59fa032578f2b947008b45e6-960-655.jpg",
+    "image": "https://i1.rgstatic.net/ii/profile.image/472161291902979-1489583432730_Q512/Siyuan_Zhang14.jpg",
     "groups": [],
     "user_permissions": [],
     "news_topic": [],
@@ -78,24 +249,381 @@
   "model": "profess.user",
   "pk": 4,
   "fields": {
-    "password": "pbkdf2_sha256$150000$lhLpOmS6RyOD$C81UmOfN5cLdNtRnlLu5W2woeRGz0jAh6rYAlYMak5k=",
+    "password": "pbkdf2_sha256$150000$tw4362rvb7DJ$yfla4YWLnNdMCGaV6lnGbgwYy2zl4BVuB6lwqjJx7q0=",
     "last_login": null,
     "is_superuser": false,
-    "username": "bob",
-    "email": "bob@ball.com",
+    "username": "bobbys",
+    "email": "bobsmith@gmail.com",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2019-09-06T15:22:43Z",
-    "first_name": "Bob",
-    "last_name": "Ball",
+    "date_joined": "2019-09-09T11:33:43Z",
+    "first_name": "Bobby",
+    "last_name": "Smith",
     "location": "",
     "job_title": "",
     "summary": "",
-    "image": "https://www.foliosociety.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/l/t/ltr_book.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Robert_C_Smith.jpg",
     "groups": [],
     "user_permissions": [],
     "news_topic": [],
     "event_type": [],
     "job_sector": []
   }
+},
+{
+  "model": "profess.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$oc5aDiIs5WdA$jfQnZ+rdWVQ+gqRAoh3BOHRWCFlCXp2r7BJQG0OCrbw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Sammysmith",
+    "email": "sam.smith@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-09T11:34:55Z",
+    "first_name": "Sam",
+    "last_name": "Jones",
+    "location": "Hamburg",
+    "job_title": "Playyaaa",
+    "summary": "Professional street pimp",
+    "image": "https://img.huffingtonpost.com/asset/5bb40c4420000030000056fb.jpeg",
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [],
+    "event_type": [],
+    "job_sector": []
+  }
+},
+{
+  "model": "profess.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$fZS3UqG10ic4$ZmFT3pmvmvqOyYeCRbw2njVqvR9mcz1wL8UW1L+1784=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "bob",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-09T19:46:26.445Z",
+    "first_name": "",
+    "last_name": "",
+    "location": "",
+    "job_title": "",
+    "summary": "",
+    "image": "",
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [],
+    "event_type": [],
+    "job_sector": []
+  }
+},
+{
+  "model": "profess.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$3v9sNdkc079z$CVA2XLxELKiXXMe05UQmhMWxwJQZMKiJNwq1Uyw+L+I=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sandra",
+    "email": "sandra@sandra.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-10T14:37:07Z",
+    "first_name": "Sandra",
+    "last_name": "Booby",
+    "location": "",
+    "job_title": "",
+    "summary": "",
+    "image": "https://media2.giphy.com/media/2tQQygXRQfH7AemzAN/giphy.gif",
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [],
+    "event_type": [],
+    "job_sector": []
+  }
+},
+{
+  "model": "profess.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$OEPt00YVcVWi$q4AmGuzN9cXXV4aHgue4S5N5gH9BmTHYAB4g4YPjPmA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "baz",
+    "email": "baz@baz.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-10T16:42:14Z",
+    "first_name": "Zeeshan",
+    "last_name": "Goburdhun",
+    "location": "London",
+    "job_title": "Software person",
+    "summary": "Professional show eater and exercise dodger",
+    "image": "https://media.licdn.com/dms/image/C4D03AQE__3vQGnFwfg/profile-displayphoto-shrink_200_200/0?e=1573689600&v=beta&t=ZhemB4TWD4okV5nZN7QJq3ESq_n5p9hniZsqi5pKdv8",
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "event_type": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "job_sector": [
+      1,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "profess.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$HHv1rgJW8ru6$IV0V0vPKYTmhhelOwGeRy/6L3z2paZkWZLDhzRKtyPw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dan",
+    "email": "danny@dan.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-11T18:59:52.196Z",
+    "first_name": "",
+    "last_name": "",
+    "location": "",
+    "job_title": "",
+    "summary": "",
+    "image": "",
+    "groups": [],
+    "user_permissions": [],
+    "news_topic": [],
+    "event_type": [],
+    "job_sector": []
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 1,
+  "fields": {
+    "title": "Tech Blogging 101",
+    "created_by": 3,
+    "image": "https://blog.soshace.com/wp-content/uploads/2019/07/Tech-Blogging-for-Web-Developers-in-2019-Why-Which-Platform-How-to-Start-Your-Own-Tech-Blog-twitter-cover.jpg",
+    "blog_content": "Off and on throughout my life, I\u2019ve operated a few blogs. My passion for blogging started when my brother and I started a humor blog in 2004. It started out as just a way for us to share funny pictures of cats with our family and friends. Then we discovered the amazing tool known as google analytics. I got incredibly addicted to the act of creating a post, and immediately being able to track whether it was something people were interested in or not.Along the way, our blog evolved into more than cat pictures. Eventually, at around 1,000 clicks per day, we monetized it, and ended up making a little money each month from it. Ever since then, I was hooked. I continued blogging as I started a career in Real Estate, where blogging can be a powerful tool. I continued to blog when I changed careers into graphic design. Now, as I\u2019ve started down the path of web development, I\u2019ve again picked up the blog and started again. The one interesting thing I\u2019ve found, throughout the process is that irregardless of the industry you are in, the principles of successful blogging are the same.\r\n\r\nSo why should you blog? \r\n\r\nThe answer to the first question may be different for different people. There\u2019s no wrong answer here. Blogging is a great way to connect with people. For me, blogging has connected me with people I would have never met any other way. Because blog posts are longer than tweets or facebook posts, it gives readers a chance to really get to know you. It gives you more opportunities to express who you are, and what you\u2019re about. But on a much more basic level, blogging gives you a chance to hone the skills of your trade. For me, I use my blog as an opportunity to explain programming concepts that I\u2019ve recently learned. Doing this forces me to be able to explain these concepts in a clear, coherent way, and in turn, I understand the concepts and material better. It\u2019s easy to see how doing that can be a valuable tool for anyone, in any industry. Okay, so on to the next question. \r\n\r\nHow to create valuable content. \r\n\r\nThe Restaurant Model Creating a blog is like opening a restaurant. A successful restaurant needs two basic ingredients. Good food (content), and advertising.Good Content First, good food. Really good food. Now, this may seem obvious, but I want you to ponder this concept for a moment. If the food is good enough, everyone that eats at your restaurant becomes a repeat customer. If you have 100 new diners each night, then you will have a continual source of traffic into your restaurant from repeat business. The same is true with blogging. If the content is good, every person that visits, will visit again. However, it\u2019s a double edged sword. While good food can make a business, bad food would destroy it. Likewise, bad content will kill a blog more quickly than anything else. While there are a host of sites to advertise on, and ways to draw more traffic to your site, I want to focus here on content. While advertising is important, without good, consistent content, it\u2019s a moot point. So the question is, how do you create content people are interested in?. The Research Phase. Similar Blogs, and similar stories. When I started programming at The Iron Yard, although I knew a thing or two about blogging, I knew literally nothing about programming. To start off, I started following everyone I could find who was a current programming student, like myself. I wanted to see what they were interested in, and what they were writing about. No matter what industry you are in, researching people in the same situation you are is a helpful way to gauge what people are interested in, and talking about. Popular Blogs. Another necessity in the research phase is popular blogs. Within the programming community, there are tons of popular blogs on Javascript, React, Ruby, and a host of other topics. A really great thing that differentiates these blogs from others, is their polished, finished product, as well as consistent, and well planned content. The Writing Phase. Honestly, the research phase is a continual process. It\u2019s a good idea to constantly be up to date on what the pulse of the blogosphere is, and what the popular topics are in your community. But very soon, you should start writing. Write about what you\u2019re interested in\\r\\nOne of the best ways to discover what you enjoy writing about is just to start writing. When I first started on the web development path, my blog was more of a journal of what I had done that day. I\u2019ve always enjoyed teaching, and as I started to write more often, I discovered that I grafted towards tutorial driven posts. When you\u2019re first starting out, I would shoot for blogging at least once a day. Maybe twice a day, if possible. Why? You might ask. Because when you\u2019re starting out, your goal is to discover your style. Find out what you really like writing about, and fine tune your blogging skills. The more you write, the better you get at it. After you\u2019ve started writing consistently, it\u2019s a good idea to start checking your blog analytics. Most blogging platforms come with some basic analytics features, where you can see how many people are reading your blog, and what posts were the most popular. Keeping a close pulse on this will help you see what your readers identify with most. You may be surprised by what your readers like, and you may decide to alter your writing style and content on future posts. Try to vary the length of your posts. Both have advantages. Longer posts are usually more advantageous for search traffic, while shorter posts tend to generate more comments and discussion. Having a variety of lengths as well as topics will engage more readers altogether, and help generate other sources of traffic. The point is, don\u2019t feel like you have to be tied down to a 15 minute post, or a 30 minute post each day. But be intentional about how you craft it. If you know you only have time for a short post, try to craft it in a way that will initiate more discussion. opening title and first paragraph. Ultimately, you do want to engage readers. Studies have shown that the average time on site for new visitors is brief. If you don\u2019t grab the attention of readers in the title, and the first paragraph, you may lose some readers. Spend time in the research phase scoping out good titles, and seeing how popular blogs open their topics.",
+    "created_at": "2019-09-09T11:41:09.431Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 3,
+  "fields": {
+    "title": "Lessons learned when building product-agnostic ui",
+    "created_by": 4,
+    "image": "https://www.farfetchtechblog.com/fotos/blog/reusable_ui_15070805735c6ece8600d03.jpg",
+    "blog_content": "At Farfetch we host and work on several websites like Farfetch.com, our Farfetch Black & White Solutions websites and other back office applications. All of them have one thing in common: the user interface components. One of the responsibilities of the web development team at Farfetch is to keep UI components updated, based on requirements received from the product team.  It\u2019s a work in progress where we aim to balance between efficient code and meeting deadlines. Over the last year, we\u2019ve been redefining our mindset when it comes to building reusable components to better accommodate everyone\u2019s needs. This mindset is helping Farfetch to keep reusable UI components product-agnostic.\r\nWhat are the struggles of creating reusable UI components?\r\n\r\nSpotting new opportunities for reusable components (ex: a slideshow or an accordion) is the easiest part: you build it to suit your specific case and everything seems fine. After additional changes from different developers to suit other cases, it becomes non-trivial to update the now messy code. Meanwhile, a newcomer web developer creates a slightly different version to avoid breaking the original one. That\u2019s when you realise the component is not that reusable after all and the worst part is that nobody knows exactly what went wrong.\r\nA common but poor approach\r\nOne of the reusable components we typically use is a slideshow. However, this story can be applied to almost any component. One of our teams was the first to implement slideshows with a minimalist outcome:\r\n\r\n<Slideshow slides={ images } />\r\n\r\nIt didn\u2019t take long for that slideshow to receive the first change requests, just for mobile, by another team. That team added a new prop isMobile which when true, reflects the requested changes. Still simple, right?\r\n\r\n<Slideshow slides={ slides } isMobile={ isMobile } />\r\n\r\nAfter different feature updates made by different developers with different product requirements (add or remove features, A/B tests, styling, you name it\u2026) we can easily end up with a component as uncomfortable as the following:\r\n\r\n<Slideshow\r\n  slides={}\r\n  isMobile={ }\r\n  isInfinite={}\r\n  slidesToShow={}\r\n  hasKeyNavigation={}\r\n  speed={}\r\n  onAfterChange={}\r\n  onClick={}\r\n  hasArrows={}\r\n  arrowsClassName={}\r\n  renderCustomArrow={}\r\n  paginationVariant={}\r\n  paginationClassName={}\r\n  bulletsOnClick={}\r\n  hasThumbnails={}\r\n  thumbnailTitle={}\r\n  thumbnailAlt={}\r\n  onThumbnailClick={}\r\n  onThumbnailHover={}\r\n  pauseOnThumbnailHover={}\r\n  // etc...\r\n/>\r\nThis is what Jenn Creighton calls \"Apropcalypse\u201d. A newcomer will have all the reasons to copy and paste this component saying \"This component is too complex, I just need 1/10 of those lines\u201d. When the struggle is real for those who want to reuse a component, it means it\u2019s much worse for the maintainers to refactor it.\r\n\r\nAn Apropcalypse happens when we have too much implementation complexity and still lack usage flexibility.\r\nIn retrospective, what went wrong?\r\n\r\nBecause most of the times we start building a reusable component based on requirements established by the product team for a specific team or scope, we unconsciously end up creating poor component APIs, that is, poor props definitions. In addition to this, we tend to start implementing the design specs without asking the right questions to our fellow designers or bothering to understand the purpose behind the layouts received. That\u2019s the perfect recipe to develop an inconsistent, non-reusable component.\r\nA better approach\r\nFirst things first: Think Global\r\n\r\nWhen building a reusable component, it\u2019s not just a matter of doing it with your teammate (usually allocated to a specific scope). It\u2019s a collaborative effort of a team with a global vision of the product where designers and developers must cooperate. You must work together to analyse the component\u2019s purpose: where and how it will be used. This is a crucial first step if you want to build a sustainable reusable component.\r\n\r\nSeparation of Concerns principle\r\n\r\nWhile building interactive UIs, one of the principles we should always have in mind is to keep the separation of concerns between business logic and UI logic, aiming for an agnostic and flexible component API, decoupled from the product requirements. If it has product requirements inside it, that\u2019s a red flag reflected right in the component API. It means the component may not be that \"reusable\u201d after all.\r\n\r\nNaming props the right way\r\n\r\nLet\u2019s go back to the first slideshow change request for mobile that caused the isMobile prop to be added. These were the specs: \"The slideshow in mobile should not be infinite and should have arrows only when it has more than one slide.\"\r\n\r\n<Slideshow slides={ slides } isMobile={ isMobile } />\r\n\r\nThis is a common on-demand tech solution: a reusable component API mostly based on the product requirements. The usage is still simple and everyone in the team knows what it is about. But, deep inside, we all know that the slideshow file is getting messy and full of if statements that have nothing to do with the slideshow itself (ex: if on mobile, it\u2019s infinite). When a reusable component has conditions based on product requirements, probably that component won\u2019t last long.\r\n\r\nA reusable component API must be intuitive and based on the layout. The product requirements should stay out of it.\r\n\r\nA common exercise that helps better naming props is to put yourself in a newcomer\u2019s shoes. Let\u2019s try it now: \"Would a newcomer guess what each prop does without knowing the product context nor needing to read the component source code?\".\r\n\r\n\r\n<Slideshow slides={ slides } isMobile={ isMobile } /> \r\n/* Newcomer possible line of thought:\r\n\"The slideshow accepts slides. On mobile something happens, but I have no idea what it is.\r\n*/\r\n\r\nUsually, we were told that a reusable component should have a simple API - the fewer the props the better - a simple API doesn\u2019t mean a short one. It means it should be intuitive and scalable. For a newcomer, the component\u2019s API is not intuitive and they would need to read the slideshow source code to understand it. When there\u2019s a new update to a slideshow, we should not be surprised if a newcomer simply copies and pastes the code and implements a slightly different new feature just for their use case. We\u2019ve all been there: the fear of touching and breaking someone else\u2019s code. \r\n\r\nWhen you need to add a new prop, you should be asking: \"What does it do? Does it have arrows? hasArrows. Is it infinite? isInfinite\u201d. So, let\u2019s rename these props to:\r\n\r\n<Slideshow\r\n  slides={ slides }\r\n  isInfinite={ !isMobile } \r\n  hasArrows={ hasMoreThanOneSlide || !isMobile }\r\n/>\r\n/* Newcomer possible thoughts:\r\n\"The slideshow accepts slides. It\u2019s infinite on mobile. It has arrows when there's more than one slide or when it\u2019s not mobile.\r\n*/\r\n\r\nA prop name should answer what it does (it\u2019s infinite) instead of when it does (it\u2019s on mobile). With this approach, the name and its value now reflect the product requirement right away - it\u2019s what defines an intuitive component API. Do not let product requirements mess with the implementation of a dumb component.\r\n\r\nSingle Responsibility Principle\r\n\r\nOnce we know how to correctly name a prop, the common next step is to use props everywhere - the Apropcalipse - a component with too many props. When in doubt, prefer to break a big component into smaller ones that are responsible for only one piece of your feature. We could break the Slideshow as it follows:\r\nBaseSlideshow: contains all the components.\r\nSlider: responsible for the slides movement/animation.\r\nArrow: displays the button to the user click next or prev.\r\nBullets: displays the dots corresponding to each slide.\r\nThumbnails: displays a list of small images representing each slide.\r\nPagination: displays numeric pagination with the current active slideshow.\r\nThis list can grow as the slideshow features grow too and it\u2019s sustainable to maintain each small component because all of them follow the single responsibility principle. Let\u2019s refactor our slideshow to follow this mindset:\r\n\r\n// import only the needed modules of a slideshow...\r\nimport { BaseSlideshow, Slider, Arrow, Bullets } from 'slideshow';\r\n\r\n// ...arrange them as you need...\r\n<BaseSlideshow>\r\n  <Slider\r\n    slidesToShow={ 2 }\r\n    onAfterChange={ handleChange } \r\n  >\r\n    { images.map(/* ... */) }\r\n  </Slider>\r\n  \r\n  // ...with flexible customization \r\n  <Arrow flow=\"prev\" onClick={ sendTracker } />\r\n  <Arrow flow=\"next\" />\r\n  <Bullets className=\"dots\" />\r\n</BaseSlideshow>\r\n\r\nThis is the Compound Components pattern and this is one of the many patterns you can use when building UI components. These are the main benefits:\r\nFlexibility: Now it\u2019s up to your teammates to define how they want the slideshow to look: What are the parts needed and how to arrange them in the DOM.\r\nSimplicity: With more explicit APIs, the learning curve to use a reusable component drops. Say goodbye to prefixes in the props such like arrowClassName, renderCustomArrow and onArrowClick. Tip: Prefixes are a red flag to detect when a component has too much responsibility.\r\nLess Responsibility: By taking away responsibility from a reusable component you are trusting your teammates, providing UI freedom, and reducing the number of concerns on your side.\r\nPerformance: Since only the necessary parts are imported, the tree shaking will do the rest and the bundle size will be smaller.\r\nMaintenance: With less code, we have fewer bugs. Also, the friction to the new contributors drops as well.\r\nUnit Testing: Usually unit tests reflect a component\u2019s complexity. The simpler the component, the simpler the tests.\r\nsmall components = flexible API = easier to (re)use\r\n\r\nThe difference is in the details\r\nTesting as a safety measure\r\n\r\nA reusable component is not just about the component itself. When used and updated frequently by multiple developers, the risk of breaking is high. To avoid bugs after a release, make sure to write unit tests that cover the UI logic and guarantees the DOM output is correct.\r\n\r\nDocumentation as a best friend\r\n\r\nDocumentation is what makes a reusable component great. Farfetch has a lot of developers and designers, so, documenting components has a great impact for collaboration and efficiency. It\u2019s also a nice way to think through its details. Solid and detailed documentation with code examples is a must-have. It will save a lot of time and pain when your colleagues start to use the component. Storybook and React Styleguidist are awesome tools to help you build great interactive documentation for your components.",
+    "created_at": "2019-09-09T11:43:19.166Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 4,
+  "fields": {
+    "title": "Digital Twins: Merging the physical world with the digital",
+    "created_by": 1,
+    "image": "https://miro.medium.com/max/3368/1*xllwtlJsi30rJz6NfqfsMw.jpeg",
+    "blog_content": "Inception\r\n\r\nThe idea of a digital twin is not singular concept, but one which combines various emerging technologies and processes such as; the Internet of Things, industrial internet, predictive modeling, big data and analytics, and artificial intelligence.\r\n\r\nThe idea of paired technologies was first developed by NASA in the early years of space exploration. The agency could not reconcile with the fact that once it sent its spacecraft into space, that was it, there was no way to immediately monitor or modify any aspect of the craft should they need to.\r\n\r\nNASA sought to resolve this problem by creating a complete digital replica of their spacecrafts. This carbon copy of their physical asset was used to run simulations of likely conditions, with the data collected and analysed to gain insights which they could put into practice.\r\n\r\nHow it is used today\r\n\r\nA digital twin is just the next step in digitalisation that has taken place over the past decades. We have demoted the importance of paper for convenience, environmental reasons, but more importantly because it is simply quicker to use digital assets, emails or online documents. In the past, some of the companies in the engineering industry, who are particularly championing the use of digital twins, would have referred to physical blueprints and written plans.\r\n\r\nNow, they are able to access almost a living digital equivalent which updates itself, contains an accessible library of live information, (written plans, blueprints, maintenance reports), and is able to act as a type of artificial intelligence assistant that analyses data gathered and is able to deliver valuable business insight. For engineers and senior execs in big projects, this can be a valuable decision making tool.\r\n\r\nCompanies have gathered data in the past in swathes and have had to wade through vast amounts of unstructured data to find relevant insights which they can use. A digital twin will have access to millions of data points which are gathered by an ecosystem of IOT sensors and controls on physical machines and their individual parts.\r\n\r\nDigital twins can also be interfaced like existing digital assistants such as Siri and Alexa. Individuals are able to speak to a digital twin\u2019s digital persona to navigate through the data and insights which have been pooled into one place.\r\n\r\nThe video below shows how an engineer could interact with a digital twin using voice commands to delve into data gathered and be presented with different options by the digital twin in order to resolve a current or predicted issue in a machine or part. This is aided by an integration with Microsoft HoloLens which allows individuals to view assets in 3D virtual reality, to manipulate the model and display accompanying data points.\r\n\r\nWhat does the future hold for this exciting technology?\r\n\r\nThe idea of digital replicates is interesting but becomes infinitely more powerful when integrated with different emerging technologies like AI, virtual reality and machine learning. Leading technology researcher Gartner suggests that digital twins will be a top strategic technology trend within the next three to five years, not just to create digital representations of industrial assets but of people, businesses and processes for simulations and analysis.\r\n\r\nThis technology is a glimpse into the future \u2014 a world where everything is interconnected and data is shared, and gathered for insight. A focus will inevitably emerge on digital security when it comes to data gathering on a scale where every machine or part has its own sensor or control gathering data every second. Security policies will have to be created and enacted to protect the integrity of the data and analysis gathered. This could incorporate an element of AI or machine learning to fend off malware and attacks.\r\n\r\nWhat is undebatable is the impact that this technology could have for businesses and society as a whole. IoT devices installed as the norm connecting different technologies, digital assistants bridging the gap between humans and machines. Models and processors can be tested and simulated before being deployed. People could let machines take over the hard work and focus on improving society for the masses.",
+    "created_at": "2019-09-09T11:45:47.828Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 5,
+  "fields": {
+    "title": "Creating products users love through data",
+    "created_by": 5,
+    "image": "https://previews.123rf.com/images/bonumopus/bonumopus1706/bonumopus170600068/79612559-big-data-visualization-machine-learning-algorithms-analysis-of-information-visual-data-infographics-.jpg",
+    "blog_content": "We need to design and build technology products that bring value to our users and catch their eye, hearts and minds. \r\nWe need to appeal to our users\u2019 emotions and most basic human needs: physiological, safety & security, esteem, social and self-actualisation.\r\nIt's up to us to: design and build products which leverage how the human brain thinks in both fast and slow modes [1], possibly making split-second decisions without conscious effort or awareness [2]. Human responses are shaped by heuristics, and cognitive biases inherited from our ancestors, and we\u2019re now building online products to cater to these primal instincts\r\n[3]. Our products must be contagious [4] and hook [5] our users by building on triggered actions that are both rewarding and habit-forming [6]. It's up to us to create products users love! [7]\r\n\r\nHow can we know if we are doing a good job of creating products users love?\r\n \r\nOr more specifically, which data points should we be leveraging to understand our product performance better? Looking at the quantitative sales numbers is one indicator to understand 'how much' users might love our digital products. The problem is that just looking at sales won't allow us to understand 'what' our users are doing and 'why\u2019 they love the products we create. This analysis won't allow us to understand how much more loveable our products could be, and it won't allow us to better prepare for a possible disruptive future [8], in which our users eventually fall in love with and leave us for a competitor. Quantitative data alone might, in fact, lead us in the wrong direction making us believe that users really like the experience provided by our digital products when, in reality, they only love the items we sell.\r\n\r\nThat's why we also need to pursue the qualitative if we truly want to understand if, and why, we are doing a good job. Surveys, questionnaires and lab usability testing can prove to be valuable tools in enriching our view of our users: if we ask the right questions, maybe we'll get the answers we're looking for. We can also look at sentiment and voice of the customer analysis [9] to try and understand how our digital products are landing.\r\n\r\nHowever, for these tools to work effectively, we are counting on users' conscious and active collaboration, and this isn\u2019t always guaranteed. \r\nAmongst others, humans:\r\nDon't always tell us exactly what they think/did (they omit/lie)\r\nDon't tell us anything (they don't care, don't understand, don't know how to express what they want, don't want to)\r\nTell us what they think they thought/did (are not always rational and sometimes tend to rationalise and make narratives to justify their choices and actions [10], they're predictably irrational [11] and their memory is often flawed [10])\r\nEven though this analysis might yield some useful insights, in itself it isn\u2019t sufficient to understand how exactly users are engaging with our products and ensure we\u2019re focused on optimisation in the right areas.\r\n \r\nLooking at how users are engaging with our products to increase our understanding of it and why they love the products we create:\r\n \r\nResearch company CEO Paco Underhill wrote a book named \"Why We Buy: The Science of Shopping\" [12] based on hard data gleaned from thousands of hours meticulously observing customers' behaviour in shopping malls, department stores, and supermarkets across America during the 90s. They tracked every aisle customers visited, shelves and items looked at, items picked up, put back in place or added to the cart and actually bought.\r\nAmongst other interesting discoveries, his team described the \"butt-brush\" factor to a New York store president: women shoppers being far less likely to purchase if they are brushed from behind by a person, a display table, or a piece of merchandise while examining retail goods. After this, the store's president immediately took measures into his hands to avoid jamming narrow aisles full of merchandise and sales increased substantially for items that were previously located in racks in these circumstances.\r\nAs in the example above, this intensive job of tracking and analysing data allowed the team to understand customer behaviour better and to help stores change their physical environment to adapt to the consumers' minds, and ultimately increase sales.\r\n\r\nLuckily, with e-commerce, we can tackle this problem in a much more efficient way. Modern tracking capabilities and Data Models can help us understand how each micro and macro conversion within an omnichannel (online and offline) user journey contributes to different business goals.\r\n\r\nFrom a macro conversion perspective, e-commerce businesses might have products focused on order completion while others in assisting it (e.g. by increasing brand/item awareness, by increasing engagement, by lead generation, by increasing reputation).\r\n\r\nFrom a micro-conversion perspective, products might allow for navigation, interaction or engagement based conversions (e.g. CTR from search, item viewed or picked up, entering the checkout funnel, adding an item to the cart, time on site upped a specific threshold) each possibly leading up to a macro conversion of its own.\r\n\r\nIn the end, analysts must stitch together data from sessions across different stages, channels, and devices to reconstruct and understand each specific user session, mainly by focusing on which pages/screens and actions took place.\r\n\r\nA theory put into practice at Farfetch\r\n\r\nAt Farfetch, we are focused on connecting and understanding the full user journey across our different products, to better achieve our goal: \"One Platform, One Single Journey, One Connected Experience changing the way people buy or sell luxury fashion across all physical and digital channels\".\r\n\r\nEssential to achieving this is our commitment to session data and truly understand the micro (e.g. CTR from search in iOS Farfetch mobile app, CTR from recommended items in Android Farfetch mobile app, add to wishlist in Farfetch website) and macro conversions (e.g. order placed in Farfetch website), grouped by the different analytical dimensions (e.g. date, time, user, screen/page viewed, action performed, characteristics of the screen/page/action) that make the most sense per product and across products (e.g. Farfetch website, iOS Farfetch mobile app), throughout our users\u2019 journey.\r\n\r\nTo enrich this analysis and achieve an even more complete view over the user journey and behaviour we can tie session data to:\r\nThe marketing channels and specific campaigns driving traffic \r\nUser and customer segmentation by parameters such as visit recency or frequency, total spend, browsing behaviour, loyalty tier, market, etc.\r\nUser experience testing permutations \r\nPost-purchase survey comments and Net Promoter Score, Customer Service communications (e.g. \"I wasn't able to finalise the checkout process successfully on the WeChat Store\u201d)\r\nLet\u2019s imagine the following scenario: there's a new trend in which a significant proportion of our top female customers are visiting our physical retail store, Browns East, to try on clothes in the Connected Mirror and then buying them online through the Farfetch iOS app. With session data, we have full visibility of this user journey and a better chance at understanding this behaviour, ultimately informing our product roadmaps and delivering an enhanced user experience.\r\n\r\nAs a practical example, let's say this generic behaviour is becoming widespread within our iOS active user base, but, for some reason, when the users get to the app don't convert as often as would be expected. Let's say we also have access to iOS users' survey data which seems to indicate that these users are having second thoughts about how they looked and felt when trying on the clothes in-store.\r\n\r\nWhat if we add to our roadmap the design of a feature which allows our users to take really stylish photos of the outfits tried in-store via the Connected Mirror and automatically sync them to their accounts to be seen in the iOS Farfetch mobile app to test whether having the photos closer to the conversion point might help enhance the user experience?\r\n\r\nNo doubt, the complexity of possible data combinations turns \"creating products users love\" into a really challenging job, but if we can equip our Analysts, Product Owners, Designers and Engineers with a rich Data Lake, robust User Behaviour Models and user-friendly Business Intelligence tools, we can truly work towards building the future of fashion.",
+    "created_at": "2019-09-09T11:48:22.144Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 6,
+  "fields": {
+    "title": "Almost one-fifth of Britons 'do not use internet'",
+    "created_by": 2,
+    "image": "https://ichef.bbci.co.uk/news/660/cpsprodpb/17ED4/production/_108640089_gettyimages-680512562.jpg",
+    "blog_content": "Almost 20% of British people are not using the internet, a survey suggests.\r\n\r\nThe detailed in-home survey of almost 2,000 Britons found that 18% described themselves as non-users.\r\n\r\nThe Oxford Internet Institute (OII), which carried out the research, said people falling into the category tended to be older and poorer than frequent net users.\r\n\r\nThe size of the group presented a \"dilemma\" for any government trying to reach and support them, said the OII.\r\n\r\nAge drop\r\n\"Non-users are older, proportionately less well-educated and have lower incomes,\" said Dr Grant Blank, survey research fellow at the OII, who oversaw the project.\r\n\r\nNon-users, said Dr Blank, were those who did not go online via any means - either phone or computer. The proportion of those falling into this category grew as people aged, he said.\r\n\r\nThe figure of 18% is higher than other official measures of non-users, he said, because of the way the OII sampled the UK population.\r\n\r\nFigures gathered by the Office for National Statistics suggest about 7.4% of the population are non-users but this figure is drawn from data gathered for its Labour Force Survey.\r\n\r\nThis, said Dr Blank, looked at people who were in work, or might be, and excluded those who did not work, as well as other non-workers such as people with long-term disabilities or residents of care homes.\r\n\r\nBy contrast, he said, the OII survey visited people in their homes and gathered a more detailed view of Britons' online lives.\r\n\r\n\"Virtually everyone is online before age 50,\" Dr Blank told the BBC.\r\n\r\nAfter that milestone, he said, there was a \"sharp decline\" in use of about 2% a year.\r\n\r\n\"There are a lot of things about the internet that get less useful as you get older,\" he said.\r\n\r\nAs people's circle of friends and interests shrink they see less and less reason to spend time online.\r\n\r\nOther survey findings:\r\n10% do not use the net because of privacy worries\r\n40% of those earning less than \u00a312,500 do not go online\r\n70% of all respondents \"uncomfortable\" with targeted advertising and data tracking\r\n12% have been hit by computer viruses\r\n11% got abusive emails\r\nOld-fashioned ways\r\nEarlier versions of the survey found the 50-plus drop-off in net use had persisted for a long time, said Dr Blank, suggesting it was not tied to a particular age group that grew up without the net.\r\n\r\nMany of those who avoided the net could benefit if they ventured online, he said. The wide range of good health information might prove useful for many people in the 18% group.\r\n\r\nIn addition, he said, the UK government was seeking to move more of its aid and benefit systems online - many of which were targeted at the group that shunned the net.\r\n\r\n\"One of the ironies of this is that people who receive government support in various ways are people who tend to be older, poorer and less well-educated and those are exactly the people who are less likely to be online,\" he said.\r\n\r\n\"That presents a dilemma for the government as making contact has to be done in the old-fashioned way which is time-consuming and expensive,\" he said.\r\n\r\nFollow-up work would involve looking into ways to reach non-users and tempting them to use the net.\r\n\r\nThe OII survey was sponsored by the UK's Department for Digital, Culture, Media and Sport as well as tech firms BT and Google.",
+    "created_at": "2019-09-09T18:19:23.119Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 7,
+  "fields": {
+    "title": "Are vertical stages 'appalling' or 'the future'?",
+    "created_by": 4,
+    "image": "https://ichef.bbci.co.uk/news/660/cpsprodpb/16B57/production/_108651039_gettyimages-1172051230.jpg",
+    "blog_content": "Phones at gigs, discuss.\r\n\r\nFrom the serial snapper who fills the camera roll on their phone (or their tablet, you know who you are) to the \"watch the band, not your phone\" traditionalists, there's a blurry spectrum of where fans and musicians stand on the best gig etiquette.\r\n\r\nThe debate went up a notch this week when Mabel performed what's been dubbed the world's first \"vertical gig\" on a three-tiered stage.\r\n\r\nIts designers called it \"a gift for a fans' Snap and Insta Stories\" which \"should stimulate some debate around live music staging conventions for a Generation Z audience\".\r\n\r\n\"I'm definitely not a purist when it comes to the whole no phones at gigs rule,\" Charli XCX tells Newsbeat.\r\n\r\n\"It's always interesting to go to a gig where phones have been banned because it is a different experience and people are more engaged.\"\r\n\r\nShe thinks the idea of building a show around audiences with phones is \"interesting\".\r\n\r\n\"I'm always interested when people do something new.\r\n\r\n\"I don't think there's ever any right or wrong answers with anything artists do.\r\n\r\n\"As long as the idea is executed confidently, and actually looks kind of good, then anything goes.\"\r\n\r\n'Cool but not the future'\r\n\r\nDiana, who was at the \"vertical gig\" said it \"was a cool idea\".\r\n\r\n\"I just hope that not all gigs are that way.\r\n\r\n\"They were so far away, you lose the interaction and the intimacy of being in the front row..\r\n\r\n\"I wouldn't like it to be the future. But it was fun as a one-off as a launch type of an event.\"\r\n\r\nHer friend Liam, who likes to \"always film everything\" at gigs, says it's important to have good memories from shows.\r\n\r\n\"I think it's so cool, more artists should do it.\r\n\r\n\"Especially if they don't tour for like two years... it's good to have something to look back at.\r\n\r\n\"I do like being front row though and seeing artists up close... it's not great if you're not going to see anything.\"\r\n\r\nChloe says some of the best gigs she's been to are when she's kept her phone in her bag.\r\n\r\n\"With something like that stage it's probably better to be further back so there's no point queuing to get to the front so maybe that's a good thing.\"",
+    "created_at": "2019-09-09T18:22:39.961Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 8,
+  "fields": {
+    "title": "Why people pay for the perfect Instagram wedding",
+    "created_by": 3,
+    "image": "https://ichef.bbci.co.uk/news/660/cpsprodpb/5623/production/_108615022_hannahmuller.jpg",
+    "blog_content": "Autumn marks the end of the main wedding season in the UK, but for this generation of newlyweds, planning a wedding is perhaps not as simple as it once was.\r\n\r\nAccording to The National Wedding Survey, social media is adding an additional layer of pressure and expense with the average cost for a wedding in 2019 totalling \u00a331,974,\r\n\r\nMany couples have forgone wedding planners in favour of taking the reins themselves, turning to social media sites and apps such as Pinterest to plan their big day.\r\n\r\nWith the price of weddings on the rise, is it possible the pursuit of the perfect Instagram wedding is responsible?\r\n\r\nHannah Muller, 20, from South Africa, is planning her wedding in London and says that Pinterest in particular has been incredibly helpful.\r\n\r\n\"I've definitely seen some amazing venues that I've tried to find,\" she said. \"Pinterest has been my best friend during the planning process. I have a Pinterest board for the wedding and within that I have all the different sections for everything you could think of.\"\r\n\r\nMany couples - 42% - said they felt under pressure to have a social media-ready wedding, according to the survey, and a quarter said they were willing to go over budget in order to achieve an \"Instaworthy\" day.\r\n\r\nHannah announced her engagement with a photo of her showing her ring and pictures like these are a popular trend online for couples who want to let followers and friends know their big news. A photoshoot alone can cost around an average of \u00a3200.\r\n\r\nThe desire for an \"Instagrammable\" day has sparked a boom in businesses dedicated to providing couples with an Instagram-ready service.\r\n\r\nSandi Chahal runs a party and accessories company, which specialises in confetti.\r\n\r\n\"Everyone I speak to says they want their wedding to be Instagrammable,\" she said. \"I think it's down to the pressure of social media which wasn't around 20 years ago.\r\n\r\n\"Our customer base wants confetti that will photograph well and tassel garlands. They send images that they have found on Pinterest to show us exactly what they want.\r\n\r\n\"That's when we noticed a trend in a desire for vivid shades and extravagant decor for weddings.\"\r\n\r\nBut Sandi says it is more than simply the desire for a good photo which encourages young couples to splash out on their big day.\r\n\r\n\"I think there's more of a willingness to have your personality shine through in your event,\" she said. \"Social media promotes the idea that your wedding can be a fun event which needn't be taken too seriously.\"\r\n\r\nLauren Reynolds, 29, from Hertfordshire, was a self-confessed Pinterest bride when planning her wedding in 2016.\r\n\r\n\"I had Pinterest boards for everything,\" she said. \"I looked at bridesmaids and brides' poses for photographs as well.\"\r\n\r\n\"I tried to make most things myself,\" she said. \"I used a lot of local sites to find items for a photo booth area we made outside on the lawn which worked really well.\r\n\r\n\"I found our venue on quite a few Pinterest pages, so I could imitate them exactly. Such as where to put flowers and how they framed the room.\"\r\n\r\nPhotographer Georgia Rachel, 24, from Norfolk, believes modern weddings encourage couples to have more fun, though she agrees they are mindful of how the public will perceive their photos.\r\n\r\n\"I capture more than just the bride and groom standing stiffly and gazing into the distance,\" she said. \"That style is quite outdated nowadays - couples want to be seen having fun in their photos.\"\r\n\r\nThe style of photography at weddings has changed undoubtedly over the years, but what divides today's couples from previous generations is the public nature of their weddings.\r\n\r\nAlthough a small number of guests receive invitations, a growing number of wedding photos are now shared on social media, making modern newlyweds more conscious of how their day will translate to their followers.\r\n\r\n\"Couples want photos that will trend, or at least get the likes they want,\" she said. \"The expense that comes with Instagram trends is what hurts a lot of couples. It's expensive to jump on bandwagons and trends when it comes to styling.\r\n\r\n\"In my experience, Instagram is causing couples to spend far more on their weddings than they ever would have done before social media. But weddings where the couple aren't swayed by Instagram often end up being the most fun.\"\r\n\r\nDespite the pressure from social media, not all brides and grooms are concerned about how many likes their big day will attract.\r\n\r\n\"I have been thinking about photos throughout the planning,\" said bride-to-be Joanna May, from London. \"Although I think that's how you picture parts of the big day anyway.\r\n\r\n\"We've been keen to stay away from 'fads' such as smoke bombs. Even though it can look cool, I think they might not date well and I want our photos to feel elegant and timeless.\r\n\r\n\"Overall I'd say social media has definitely helped with getting ideas and communicating them to others, but I wouldn't say I've thought much, if at all, about how the wedding will look online.\r\n\r\n\"As long as we have beautiful photos, we'll be happy.\"",
+    "created_at": "2019-09-09T18:24:44.410Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 9,
+  "fields": {
+    "title": "Apps, AI, & sweeper keepers - big data hits the football big time",
+    "created_by": 1,
+    "image": "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/1482/production/_108605250_mahrez_getty.jpg",
+    "blog_content": "As Manchester City's players returned to the home dressing room after January's exhilarating, exhausting 2-1 win over Liverpool, music shuddered from speakers. A house remix of Gregory Porter's Liquid Spirit mixed with gleeful shouts as the celebrations began.\r\n\r\nBut in one corner, three men huddled quietly together.\r\n\r\nEderson and John Stones stared at a big screen as Harry Dunn, a member of manager Pep Guardiola's backroom staff, zipped through a timeline of the match action to show a replay of Stones clearing the ball off his own goalline, with just 11mm to spare.\r\n\r\nBy the time they were showered, changed and back in the tinted privacy of their cars, Ederson, Stones or any of their team-mates could open the Hudl app on their phone and watch that moment, along with every other involvement they had in the game.\r\n\r\nThat same orange icon will be on most Premier League players' screens.\r\n\r\nSome will log on after a match to find a similarly comprehensive compilation of highlights (and lowlights). Others will find a selection of clips with complimentary or critical coaches' notes. Some are even required to put together their own showreel, demonstrating where they felt they did well and could do better.\r\n\r\nWhen it comes to the serious business of deciphering what happened on the pitch, all 20 Premier League sides have a relationship with the American technology firm, which monitors every match from five tactical cameras, as well as the traditional broadcast angle shown on television.\r\n\r\nWatching from high in the stands at Etihad Stadium during City's win over Liverpool, two of the club's performance analysis department worked furiously on laptops, using the programme to capture the devil in the match's detail.\r\n\r\nTouches, tackles, shots, passes, high presses, deep blocks, set-pieces, slip-ups and much, much more are monitored with about 90 different aspects of the game \"coded\" live, while the game is going on, to tie incidents to the relevant footage.\r\n\r\nTheir work can be used to flag things up to the tablet-clutching coaches on the bench and maximise the 15-minute interval.\r\n\r\n\"At half-time the coaches can see anything they want,\" explains Aaron Briggs, Manchester City's senior first-team performance analyst.\r\n\r\n\"If they spot an incident at a corner, we can pull the clip, find the best angle to get the coaches' point across and they will deliver it to the player using the technology.\"\r\n\r\nBut full-time is when the real hard work begins for Briggs and his team.\r\n\r\nThey will then spend about four hours going back through each City match looking for more subtle tactical cues and formational shifts, focusing on each individual player in turn, coding the footage to produce a deeper level of analysis.\r\n\r\nA top-level match contains roughly 2,500 bookmarks, highlighting points of interest to be called up at the touch of a button.\r\n\r\nIf Guardiola's performance analysis chief, Carles Planchart, wants to see where City's attempts to play out from the back are faltering, he can instantly review every time his defenders have been hustled out of possession.\r\n\r\nIf the Spaniard wants to see how vulnerable an opposition full-back is to a quick switch of play, he can review how they dealt with crossfield balls over the past five seasons.\r\n\r\nIn April, he described how City had scored a goal after noting and exploiting Chelsea midfielder Jorginho's tendency to stray out of position as his team pressed high upfield.\r\n\r\nThe evidence for every tactical theory is ready for review in seconds.\r\n\r\nWith stats gatherers, such as Opta, providing a raft of raw numbers, and footage from across different continents easily available, analysts can spot trends that previously would take hundreds of hours to chisel out.\r\n\r\nIn the 1950s, former accountant Charles Reep, sometimes sporting a miner's helmet to illuminate his notes, would manically scribble down play-by-play diagrams at every Swindon home match to try to find out the most effective playing styles. His recommendation of long-ball route-one football shaped the English psyche for decades to come.\r\n\r\nDuring his time in charge of Argentina, Leeds United boss Marcelo Bielsa would spend 12 hours a day, on his own, spooling through videotapes of matches, laboriously editing clips together and drawing up diagrams. He took a library of 2,000 video tapes for his team to watch to the 2002 World Cup in Japan.\r\n\r\nBriggs has his own memories of technology limiting, rather than accelerating, analysis.\r\n\r\n\"When I first started my career at Preston in 2008, there was a television with a massive back and a small 20-inch screen,\" he says.\r\n\r\n\"Below, it had a double cassette player and you would play the game on the top VHS, stopping, fast-forwarding to find the bits that you wanted to record on to the bottom deck. The whole process would take about a day.\r\n\r\n\"Then came the era of DVDs. You would be sent the opposition games through the post, the manager would be waiting for it and I would be chasing Royal Mail, trying to find out if it had been tracked and when it would arrive.\r\n\r\n\"I used to take a nine DVD burner with me for every away trip, put a master DVD in the top and then burn nine copies for the coaches. Now we just stick it on a hard drive and transfer it instantly to whoever we want.\"\r\n\r\nThe hard drives are only getting bigger.\r\n\r\nSpatial information is the latest frontier in football's big data arms race. For the past few years, Premier League matches have not just been filmed but 'tracked', with the movement of every player and the ball continuously recorded via optical technology.\r\n\r\n\"The spatial data is so key because when you look at an individual's involvement in the game it is normally less than two minutes on the ball,\" says Briggs.\r\n\r\n\"The spatial data is the other 98% of the game that no-one has really looked at previously.\"\r\n\r\nThe technology has revolutionised basketball's NBA since its arrival in 2013, with teams and players tweaking collective tactics and individual techniques to increase their chances of winning.\r\n\r\nUnlocking potential percentage gains in football, a less structured, more fluid sport where scores are relatively few, is trickier.\r\n\r\nPremier League frontrunners Manchester City and Liverpool are among those to employ data scientists to crunch the numbers, but, as well as the finest minds, artificial intelligence is also being brought to bear.\r\n\r\nStats Edge is a match preparation tool that was first road-tested by Croatia at last year's World Cup.\r\n\r\nBefore their semi-final, team analyst Marc Rochon could instantly call up every set-piece opponents England had delivered in the tournament, seeing the runs made by each attacker, the type of delivery favoured by each taker and which area of the box were most profitable in generating attempts at goal.\r\n\r\nGareth Southgate's \"Love Train\" was duly derailed, helping Croatia to a showpiece final against France.\r\n\r\nThis season is the first that the programme is available to Premier League clubs.\r\n\r\nIt uses spatial data to detect different phases of play, giving an overview on how teams build from the back, how they counter-attack, how often and how high they press, their reliance and vulnerability to crosses, their deep-lying defensive shapes and how their formation morphs as they move upfield.\r\n\r\nIf a player is slow in taking up their defensive role, if there is unexploited space between the lines, if a particular forward burst is where a team derives a large number of their chances, the programme remorselessly, objectively exposes it.\r\n\r\n\"When Marcelo Bielsa did his press conference at Leeds last season, describing his tactical preparation, what he showed was throwing people at analysing formation,\" says Dr Patrick Lucey, the company's chief scientist.\r\n\r\n\"He took in 51 of Derby's games and each took four hours - that just reeks of needing disrupting. We need new technology to address that.\"\r\n\r\nHowever, if it turns out machines can do the job of a small battalion of analysts, where will that leave Briggs and football's superpowers?\r\n\r\nWill their less well-resourced opponents be able to uncover flaws in City that would have stayed hidden to the unassisted human eye?\r\n\r\nOr, by laying every tactical quirk bare, will technology foil whatever ploy they come up with to narrow the gap?\r\n\r\nThe team behind the AI tool believe machine learning will encourage, rather than stifle, innovation.\r\n\r\nPaul Power, AI scientist, points to the way some goalkeepers, such as Julian Pollersbeck at Hamburg, have been deployed well out of their box when their team is in possession, the sort of tactic that would traditionally have been seen as too risky, whatever rewards it might offer.\r\n\r\n\"Technology and data is information which allow people to make better decisions and evolve the game - because those coaches can see where the ball is lost most often and what the risks are and how to mitigate them,\" he says.\r\n\r\n\"Teams have always had questions, but data has not always had the answer. Now, with the advent of deep learning and modelling dynamic systems, we can start to answer them.\"\r\n\r\nAnd this is just the start.\r\n\r\nIn the future there will be a scouting tool that will flag potential transfer targets, not on how well they are playing for their current team, but on how they would fit the style of their possible buyers.\r\n\r\nThe aim is to model the delicate alchemy of teamwork, predicting how players move and interact alongside each other, a process they term \"ghosting\".\r\n\r\nThis year, their company is tracking how the very skeletons of college basketball players move, helping teams make miniscule technical adjustments and winkle out \"tells\" that hint at what an opponent is about to do.\r\n\r\nBut sometimes, still, whatever the computers say, whatever the analysts can show, the wrong option is the right choice.\r\n\r\nFour months after Stones and Ederson had gathered to watch one decisive moment in the Premier League race, another arrived at Etihad Stadium.\r\n\r\nWith 20 minutes to go and City unable to break down a stubborn Leicester side in the penultimate game of the season, central defender Vincent Kompany stepped forward 25 yards out from goal.\r\n\r\n\"If you analyse all the centre-backs from across the world, hitting the ball from the distance that Vinnie did, you would tell him not to shoot,\" remembers Briggs.\r\n\r\nIndeed, boss Guardiola, along with players Sergio Aguero, Gabriel Jesus and Raheem Sterling, admitted afterwards they were willing their captain to do anything but.\r\n\r\n\"Vinnie felt the moment though, delivered and it was a major reason why City won the Premier League,\" adds Briggs.\r\n\r\n\"There is always going to be the individual talent of the players on the pitch who can decide a game in a moment. It is not going to be computer v computer, the fans don't want that and I think football would kind of lose its soul if that happened.\"",
+    "created_at": "2019-09-09T18:26:25.696Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 10,
+  "fields": {
+    "title": "Fake news: BBC and tech firms join forces to fight disinformation",
+    "created_by": 2,
+    "image": "https://ichef.bbci.co.uk/news/660/cpsprodpb/54D9/production/_99712712_gettyimages-639620990.jpg",
+    "blog_content": "Plans to help tackle so-called \"fake news\" have been announced by the BBC and some of the biggest names in journalism and technology.\r\n\r\nThe new measures include an early warning system for use during elections or when lives may be at risk, extra online education and improved access to impartial resources for voters.\r\n\r\nMajor publishers, Google, Twitter and Facebook have helped devise the scheme.\r\n\r\nThe BBC said the moves were \"crucial steps\" in fighting disinformation.\r\n\r\nIt follows criticism of big technology firms for failing to do enough to prevent the spread of \"false news\" - from scares about vaccines to stories manufactured to influence elections.\r\n\r\nOther recent events such as this year's Indian elections have also highlighted the dangers of disinformation and the risk it poses to democracy.\r\n\r\nEarlier this summer, the BBC convened a Trusted News Summit, bringing together senior figures from major global technology firms and publishing to help tackle the problem.\r\n\r\nThe group drew-up new plans including:\r\n\r\nEarly warning system: creating a system so that organisations can alert each other rapidly when they discover disinformation that threatens human life or disrupts democracy during elections. The emphasis will be on moving quickly and collectively to undermine disinformation before it can take hold.\r\nMedia education: a joint online media education campaign to support and promote media education messages.\r\nVoter information: co-operation on civic information around elections, so there is a common way to explain how and where to vote.\r\nShared learning:  particularly around high-profile elections.\r\nBBC Director General Tony Hall said: \"Disinformation and so-called fake news is a threat to us all. At its worst, it can present a serious threat to democracy and even to people's lives.\r\n\r\n\"This summit has shown a determination to take collective action to fight this problem and we have agreed some crucial steps towards this.\"\r\n\r\nFurther details will be released at a later date.",
+    "created_at": "2019-09-09T18:27:57.502Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 11,
+  "fields": {
+    "title": "Chandrayaan 2: What may have gone wrong with India's Moon mission?",
+    "created_by": 5,
+    "image": "https://ichef.bbci.co.uk/news/624/cpsprodpb/FC22/production/_108664546_gettyimages-1166449593.jpg",
+    "blog_content": "India's space agency, Isro, has not yet released information on how it lost contact with its Moon lander seconds before it was due to touch down on the lunar surface. But former members of the agency tell the BBC what may have gone wrong.\r\n\r\nChandrayaan-2 (Moon vehicle 2) entered the Moon's orbit on 20 August and was due to land on the lunar surface a little after midnight India local time (1800 GMT) on 7 September - a month after it first shot into space.\r\n\r\nBut contact was lost moments before the lander (named Vikram, after Isro founder Vikram Sarabhai) was expected to touch down at the lunar south pole.\r\n\r\nThe orbiter has since spotted the lander on the surface of the Moon - unbroken, but tilted on its side. So far, scientists have not been able to establish contact with it.\r\n\r\nThe lander's final heart-stopping descent were monitored on screens, complete with readings which reflected the movement of the lander as it headed towards the surface of the Moon.\r\n\r\nThe screens carrying the readings also appeared on television and various social media accounts as the landing was broadcast live.\r\n\r\nWhen the countdown began, the lander was moving at a velocity of 1,640 metres per second. Scientists say it appeared to be moving as planned during the first two phases of deceleration, known as the rough braking and fine braking operations.\r\n\r\nIt was during the final stage, known as the \"hovering\" stage, that the problem occurred.\r\n\r\nThe problem could well have been with the lander's central engine, according to Prof Roddam Narasimha, a former member of Isro. He said that his theory was based on the readings on the screen.\r\n\r\n\"One plausible explanation was that the lander started falling more rapidly,\" he told BBC Hindi's Imran Qureshi. \"It's supposed to come down at a velocity of two metres per second when it hits the Moon's surface. But the gravity on the moon would have made it fall somewhat more rapidly.''\r\n\r\nHe believes this could be because the central engine was not \"producing the thrust that is required and, therefore, the deceleration was no longer what it was supposed to be\".\r\n\r\nAnd this, in turn, may have led to eventually losing communication with the lander itself.\r\n\r\nThe head of India's first Moon mission, Mylswamy Annadurai, also said the anomaly in the velocity profile was an indication that something had malfunctioned in the lander as it hurtled towards the Moon.\r\n\r\n\"Most likely the orientation [of the lander] could have been disrupted. Once we look at the data we will be able to say for sure what happened, but it is likely that either a sensor or a thruster could have malfunctioned,\" he told BBC Tamil.\r\n\r\nDr Rajeswari Rajagopalan, the head of the Nuclear and Space Policy Initiative of the Observer Research Foundation (ORF), also said an engine malfunction was the likeliest reason.\r\n\r\n\"In the absence of data parameters, it is difficult to come to a conclusion, but the readings on the screen did show that something was wrong,\" she told BBC Hindi.\r\n\r\n\"The other possibility is that when you do a landing at a higher speed, you cause a lot of dust to rise that also shakes up the spacecraft because of the gravitational pull. But it's more likely the malfunctioning of one of the engines.\"\r\n\r\nChandrayaan-2 was the most complex mission ever attempted by Isro.\r\n\r\nThe lander carried within its belly a 27kg Moon rover (called Pragyan, which translates as wisdom in Sanskrit), which included instruments to analyse the lunar soil.\r\n\r\nThe rover had the capacity to travel 500m from the lander in its 14-day life span, and would have sent data and images back to Earth for analysis.\r\n\r\nThe mission would have focused on the lunar surface, searching for water and minerals and measuring moonquakes, among other things.",
+    "created_at": "2019-09-09T18:30:16.787Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 12,
+  "fields": {
+    "title": "High Street: Five ways UK shopping has changed",
+    "created_by": 1,
+    "image": "https://ichef.bbci.co.uk/news/660/cpsprodpb/409D/production/_108314561_gettyimages-625720396.jpg",
+    "blog_content": "Hardly a month goes by without news of another wave of shops shutting, or of stores losing money.\r\n\r\nSir Philip Green's Arcadia Group, which includes Topshop and Miss Selfridge, and Marks and Spencer are among those which have seen profits slump.\r\n\r\nSo, what's behind the High Street crisis?\r\n\r\nWhat shops are closing?\r\nA record 2,481 shops disappeared from UK High Streets last year - up 40%, according to the accountancy firm PwC and the Local Data Company.\r\n\r\nBig chains such as Toys R Us, Maplin and Poundworld went bust and vanished altogether.\r\n\r\nOthers such as Homebase, Mothercare, Carpetright and New Look did restructuring deals with their landlords, closing hundreds of shops between them.\r\n\r\nThe number of empty shops stands at a record high.\r\n\r\nAnd in July the proportion of all shops that are empty reached 10.3%, its highest level since January 2015.\r\n\r\nThis year, the trend has continued, with fashion chains Karen Millen and Coast announcing closures. They have more than 200 outlets and concessions between them.\r\n\r\nThe fast-growing online fashion chain Boohoo snapped up the brands following their collapse. But Boohoo isn't interested in owning and running physical stores, so the number of closures will continue to creep up.\r\n\r\nWhy are shops struggling?\r\nIn many ways, retail is a pretty simple business. You have to sell things for more than you paid for them\r\n\r\nBut in the past few years, things have become a lot harder for traditional retailers.\r\n\r\nCompanies have had to deal with rising costs, from wages and business rates to regulatory changes such as the introduction of Europe's new data law, the General Data Protection Regulation (GDPR).\r\n\r\nAnd, at the same time, retailers are trying to adapt to rapidly changing shopping habits.\r\n\r\nConsumers now spend one in every five pounds online - and if businesses are seeing 20% fewer sales on the shop floor as well as their fixed costs rising, then profit margins will be squeezed.\r\n\r\nThis huge shift in spending is disrupting retailers' business models. Too many retailers either fail or are unable to adapt.\r\n\r\nThose with underlying problems have suffered.\r\n\r\nTake Debenhams, it's been struggling for years. Its previous owners had saddled it with a huge amount of debt and it was tied into long leases.\r\n\r\nAnother department store, House of Fraser, was rescued last year by Mike Ashley's Sports Direct. He outlined a plan to create the \"Harrods of the High Street\" and said about 80% of the stores would remain open. But he's now admitted the business was losing more than \u00a31m a week.\r\n\r\nConsumers are spending increasing amounts of their disposable income on experiences and lifestyle. Being mediocre isn't good enough anymore.\r\n\r\nAre there fewer shoppers?\r\nShoppers are making fewer visits to High Streets.\r\n\r\nThe retail analytics company Springboard tracks footfall in main towns and cities. It's seen a decline in numbers for the past few years.\r\n\r\nInclement weather and a reduced appetite for spending by consumers have played a role along the way.\r\n\r\nConsumers are still shopping, of course. But even with the rise of online, shops need people to walk through the door.\r\n\r\nHow many jobs have been lost?\r\nFrom March 2016 to 2019, UK retail lost 106,000 jobs according to the British Retail Consortium (BRC). Those figures are based on data from the Office for National Statistics.\r\n\r\nPoundworld saw the biggest job losses, with more than 5,000 redundancies. Toys R Us and Maplin also lost 5,500 jobs between them.\r\n\r\nThis year, the fallout from various restructurings includes 1,000 job losses and plunging profits at Sir Philip Green's Arcadia group and 100 redundancies at the fashion retailer LK Bennett.\r\n\r\nMore job losses will come. More than two years ago, the BRC warned there would be up to 900,000 fewer jobs in retail over the next decade.\r\n\r\nWhat's opening instead?\r\nAlthough last year saw a big drop in store openings overall, there were some bright spots.\r\n\r\nBeauty salons, nail bars and independent coffee shops were some categories that saw the largest increases in store openings.\r\n\r\nAnalysts have said this demonstrates the High Street's move away from traditional retailing.\r\n\r\nSupermarkets Aldi and Lidl are two of the big names also continuing to open lots of stores.\r\n\r\nBut the overall picture is the UK has too many shops and in the wrong locations. The winners will be the companies that know what their consumers want and give it to them, with great service and products they want to buy.",
+    "created_at": "2019-09-09T18:32:42.765Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 13,
+  "fields": {
+    "title": "Restaurants urged to serve us less food",
+    "created_by": 3,
+    "image": "https://ichef.bbci.co.uk/news/660/cpsprodpb/17627/production/_108638759_de30.jpg",
+    "blog_content": "It's lunchtime at the Harrington Arms in Cheshire. Sitting cosily in the window of the former 18th Century farmhouse, two customers have opted to share their piping hot portion of turkey and ham pie.\r\n\r\nWithout quite realising it, they're choosing to do exactly what food waste campaigners want us all to do: only get served up what we'll definitely eat.\r\n\r\nOver a million tonnes of food prepared in the hospitality industry gets thrown away. And charity Wrap says 75% of it could have been eaten.\r\n\r\nThis older pair's concerns are more about appetite than the environment: \"We don't eat as much as we used to and we don't want to waste anything,\" they smile, delighted that the pub has kindly given them extra gravy to help spread their shared meal.\r\n\r\nBut back in the kitchen, there's a deliberate effort to reduce what's served to reduce waste and save cash. Portion sizes are down. Garnishes and sauces are optional extras. Lined up by the sink are plates scraped clean by happy eaters.\r\n\r\nThe Harrington Arms is one of over 240 Robinsons Brewery pubs to take on new guidelines from Wrap; making some small changes after monitoring and measuring what gets rejected.\r\n\r\nThe charity has the backing of some big-name chefs and chains, as well as the Government. But it's tricky when companies have an obligation to serve up crowd-pleasing grub.\r\n\r\nOn average about a fifth of food binned across industry is spoiled, damaged or past its best. Almost half gets the chop as it's prepped. And a third is our fault - plate waste sent back when someone cannot manage it. Salad, spuds and rice are the most over-served offenders.\r\n\r\nRobinsons Brewery estimates \u00a38,000 worth of food is wasted in each pub and maintains customers have been supportive of the cuts. \"A lot of licensees seem to think that the bigger the portion - the happier the customer. But it's not always the case,\" says Nick Burns, who consults on the catering across the brewery's network.\r\n\r\n\"Adding that salad garnish, which may cost 30 or 40p, to the plate makes it look better but if the customer is not eating it, it's waste,\"\r\n\r\nEleanor Morris has worked on Wrap's Guardians of Grub campaign that challenges businesses of all kinds to rethink how they procure, prep and present food. \"Business food waste is hidden; it goes into a bin and gets taken away, so it's not really seen as a cost,\" she says.\r\n\r\n\"But we're all surrounded by food waste. It's everybody's issue whether we're at home and whether we're eating out.\"\r\n\r\nIt's not a new idea. Zero Waste Scotland's trial to tackle 53,000 tonnes of scraps began five years ago. The trial focused on giving out doggy bags for customers to take home their leftovers - something Angela Loftus and the team at Black Sheep Bistro in Glasgow are still keenly offering as part of their commitment to reduce stigma and boost sustainability.\r\n\r\n\"If a plate comes back to the kitchen and staff are saying it's being boxed up, I feel happy about that, because I know the person enjoyed it,\" she says.\r\n\r\n\"If customers see this is the norm in here then they feel more comfortable about it and they can just carry home our nice wee bag with them. It makes it look like it's the right thing to do.\"\r\n\r\nAll of the ideas to reduce waste rely upon dialogue between business and customer - about what will be dished out in exchange for their cash. A meal out is still a treat for most people. Diners will only really swallow changes if they feel like they're still being offered good value for money.",
+    "created_at": "2019-09-09T18:34:01.751Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 14,
+  "fields": {
+    "title": "The secrets of controlling your internet profile",
+    "created_by": 2,
+    "image": "https://ichef.bbci.co.uk/news/660/cpsprodpb/2061/production/_108598280_whatsubject.jpg",
+    "blog_content": "\"In the future, everyone will be anonymous for 15 minutes.\" So said the artist Banksy, but following the rush to put everything online, from relationship status to holiday destinations, is it really possible to be anonymous - even briefly - in the internet age?\r\n\r\nThat saying, a twist on Andy Warhol's famous \"15 minutes of fame\" line, has been interpreted to mean many things by fans and critics alike. But it highlights the real difficulty of keeping anything private in the 21st Century.\r\n\r\n\"Today, we have more digital devices than ever before and they have more sensors that capture more data about us,\" says Prof Viktor Mayer-Schoenberger of the Oxford Internet Institute.\r\n\r\nAnd it matters. According to a survey from the recruitment firm Careerbuilder, in the US last year 70% of companies used social media to screen job candidates, and 48% checked the social media activity of current staff.\r\n\r\nAlso, financial institutions can check social media profiles when deciding whether to hand out loans.\r\n\r\nMeanwhile, companies create models of buying habits, political views and even use artificial intelligence to gauge future habits based on social media profiles.\r\n\r\nOne way to try to take control is to delete social media accounts, which some did after the Cambridge Analytica scandal, when 87 million people had their Facebook data secretly harvested for political advertising purposes.\r\n\r\nWhile deleting social media accounts may be the most obvious way to remove personal data, this will not have any impact on data held by other companies.\r\n\r\nFortunately, in some countries the law offers protection.\r\n\r\nIn the European Union the General Data Protection Regulation (GDPR) includes the \"right to be forgotten\" - an individual's right to have their personal data removed.\r\n\r\nIn the UK the that is policed by the Information Commissioner's Office. Last year it received 541 requests to have information removed from search engines, according to data shown to the BBC, up from 425 the year before, and 303 in 2016-17.\r\n\r\nThe actual figures may be higher as ICO says it often only becomes involved after an initial complaint made to the company that holds the information has been rejected.\r\n\r\nBut ICO's Suzanne Gordon says it is not clear-cut: \"The GDPR has strengthened the rights of people to ask for an organisation to delete their personal data if they believe it is no longer necessary for it to be processed.\r\n\r\n\"However, this right is not absolute and in some cases must be balanced against other competing rights and interests, for example, freedom of expression.\"\r\n\r\nThe \"right to be forgotten\" shot to prominence in 2014 and led to a wide-range of requests for information to be removed - early ones came from an ex-politician seeking re-election, and a paedophile - but not all have to be accepted.\r\n\r\nCompanies and individuals, that have the money, can hire experts to help them out.\r\n\r\nA whole industry is being built around \"reputation defence\" with firms harnessing technology to remove information - for a price - and bury bad news from search engines, for example.\r\n\r\nOne such company, Reputation Defender, founded in 2006, says it has a million customers including wealthy individuals, professionals and chief executives. It charges around \u00a35,000 ($5,500) for its basic package.\r\n\r\nIt uses its own software to alter the results of Google searches about its clients, helping to lower less favourable stories in the results and promote more favourable ones instead.\r\n\r\n\"The technology focuses on what Google sees as important when indexing websites at the top or bottom of the search results,\" says Tony McChrystal, managing director.\r\n\r\n\"Generally, the two major areas Google prioritises are the credibility and authority the web asset has, and how users engage with the search results and the path Google sees each unique individual follow.\r\n\r\n\"We work to show Google that a greater volume of interest and activity is occurring on sites that we want to promote, whether they're new websites we've created, or established sites which already appear in the [Google results pages], while sites we are seeking to suppress show an overall lower percentage of interest.\"\r\n\r\nThe firm sets out to achieve its specified objective within 12 months.\r\n\r\n\"It's remarkably effective,\" he adds, \"since 92% of people never venture past the first page of Google and more than 99% never go beyond page two.\"\r\n\r\nProf Mayer-Schoenberger points out that, while reputation defence companies may be effective, \"it is hard to understand why only the rich that can afford the help of such experts should benefit and not everyone\".\r\n\r\nSo can we ever completely get rid of every online trace?\r\n\r\n\"Simply put, no,\" says Rob Shavell, co-founder and chief executive of DeleteMe, a subscription service which aims to remove personal information from public online databases, data brokers, and search websites.\r\n\r\n\"You cannot be completely erased from the internet unless somehow all companies and individuals operating internet services were forced to fundamentally change how they operate.\r\n\r\n\"Putting in place strong sensible regulation and enforcement to allow consumers to have a say in how their personal information can be gathered, shared, and sold would go a long way to addressing the privacy imbalance we have now.\"",
+    "created_at": "2019-09-09T18:35:49.604Z"
+  }
+},
+{
+  "model": "profess.blog",
+  "pk": 15,
+  "fields": {
+    "title": "Think your iPhone is safe from hackers? That\u2019s what they want you to think\u2026",
+    "created_by": 16,
+    "image": "https://i.guim.co.uk/img/media/6c344384d1a49016ef5ba832823dc2a06fa48ca8/0_0_5000_3335/master/5000.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=c97aa562663e9c5687cc40a2734b1f16",
+    "blog_content": "Whenever there\u2019s something that some people value, there will be a marketplace for it. A few years ago, I spent a fascinating hour with a detective exploring the online marketplaces that exist in the so-called \u201cdark web\u201d (shorthand for the parts of the web you can only get to with a Tor browser and some useful addresses). The marketplaces we were interested in were ones in which stolen credit card details and other confidential data are traded.\r\n\r\nWhat struck me most was the apparent normality of it all. It\u2019s basically eBay for crooks. There are sellers offering goods (ranges of stolen card details, Facebook, Gmail and other logins etc) and punters interested in purchasing same. Different categories of these stolen goods are more or less expensive. (The most expensive logins, as I remember it, were for PayPal). But the funniest thing of all was that some of the marketplaces operated a \u201creputation\u201d system, just like eBay\u2019s. Some vendors had 90%-plus ratings for reliability etc. Some purchasers likewise. Others were less highly regarded. So, one reflected, there really is honour among thieves.\r\n\r\nBut it\u2019s not just credit cards and logins that are valuable in this underworld. The most highly prized \u201cgoods\u201d are what hackers call \u201cexploits\u201d \u2013 ie specialist knowledge of vulnerabilities in operating systems or other software that can be exploited by intruders for malign purposes. And within this category the really, really valuable ones are \u201czero-day\u201d exploits. These are aimed at software vulnerabilities that, prior to their discovery, were completely unknown; in other words, they are vulnerabilities with no known patches and can therefore be exploited until a fix has been found.\r\n\r\nThere are, as you might expect, specialised marketplaces in which zero-day exploits are traded. Some of the most avid purchasers are the security agencies of governments. I\u2019m sure that GCHQ, the NSA and the CIA, for example, maintain stockpiles of zero-day exploits, some internally discovered by their geeks together with some purchased from the market. But there are other, even less savoury customers too. And there are vendors of varying degrees of transparency and integrity who operate in the marketplace. Companies like Zerodium, for example, which describes itself as \u201cthe leading exploit acquisition platform for premium zero-days and advanced cybersecurity capabilities\u201d, operate openly. Their modus operandi seems to involve connecting ethical hackers and computer scientists who have discovered vulnerabilities with organisations whose computer systems might suffer from them and would therefore value being alerted.\r\n\r\nSome zero-day exploits can fetch high prices. This week Zerodium announced that it will pay $2.5m to security researchers who provide exploits that allow the complete takeover of Android phones without requiring the target to click on anything. But the big news in the announcement was that Zerodium was valuing the same kinds of exploits on Apple\u2019s iOS operating system at only $2m. Given that the Android system is notoriously littered with security vulnerabilities while iOS is reckoned to be relatively secure, the discrepancy looked like a misprint. Surely the rewards for cracking the more secure system should be higher?\r\n\r\nIn principle, yes. But on 29 August, Google\u2019s Threat Analysis Group\u2019s researchers revealed that m alicious websites had been covertly and successfully hacking iPhones for years. The hacked sites were being used in \u201cindiscriminate watering hole attacks\u201d against their visitors, using iPhone zero-day exploits. Simply visiting a hacked site was enough for the exploit server to attack the iPhone, and if it was successful, install a monitoring implant. Google estimated that these sites received \u201cthousands of visitors\u201d per week. And an enigmatic passage in the Google report \u2013 \u201cTo be targeted might mean simply being born in a certain geographic region or being part of a certain ethnic group\u201d \u2013 has led to fevered speculation that the culprit was China and the target its Muslim Uighur minority.\r\n\r\nThis revelation of iOS\u2019s unsuspected vulnerability came as a shock to a world that had assumed that the orderly, tightly controlled Apple software ecosystem would be more secure than the chaotic, multi-versioned and unpoliced Android system. Nothing, remember, goes on an iPhone that Apple has not vetted and approved, whereas anything goes on Android. But the corollary of this is that iOS is a complacent monoculture \u2013 a vast billion-strong monoculture. That has two consequences. One is that it\u2019s a juicy target for attackers. The other is that if you are confident that your phone is secure then you will be cavalier in what you do with it. Which leads one to wonder how many Uighurs are now ruing the day they first thought of buying an iPhone.",
+    "created_at": "2019-09-10T19:05:30.336Z"
+  }
+},
+{
+  "model": "profess.comment",
+  "pk": 1,
+  "fields": {
+    "title": "Wow",
+    "content": "Very interesting and insightful",
+    "user": 4,
+    "created_at": "2019-09-09T11:48:48.993Z",
+    "blogs": [
+      1
+    ]
+  }
+},
+{
+  "model": "profess.comment",
+  "pk": 2,
+  "fields": {
+    "title": "Hits the spot",
+    "content": "Wanted to learn more about data and this helped",
+    "user": 2,
+    "created_at": "2019-09-09T11:49:19.613Z",
+    "blogs": [
+      5
+    ]
+  }
+},
+{
+  "model": "profess.comment",
+  "pk": 3,
+  "fields": {
+    "title": "Digital Twins?",
+    "content": "Never heard of this before but very exciting for the future",
+    "user": 3,
+    "created_at": "2019-09-09T11:49:51.786Z",
+    "blogs": [
+      4
+    ]
+  }
+},
+{
+  "model": "profess.comment",
+  "pk": 4,
+  "fields": {
+    "title": "Hmmmm",
+    "content": "Not sure this encapsulated everything required to set up a blog",
+    "user": 1,
+    "created_at": "2019-09-09T11:50:16.147Z",
+    "blogs": [
+      1
+    ]
+  }
+},
+{
+  "model": "profess.comment",
+  "pk": 5,
+  "fields": {
+    "title": "No way!",
+    "content": "Wow, great level of detail",
+    "user": 5,
+    "created_at": "2019-09-09T11:50:35.980Z",
+    "blogs": []
+  }
 }
+]
