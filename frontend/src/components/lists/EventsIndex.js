@@ -41,7 +41,7 @@ class EventsIndex extends React.Component {
                   </div>
                   <header className="card-header">
                     <footer className="card-footer">
-                      <a target="_blank" rel="noopener noreferrer" href={event.url} className="card-footer-item">Attend Here</a>
+                      <a target="_blank" rel="noopener noreferrer" href={event.url} className="card-footer-item">Attend</a>
                       <p className="card-footer-item has-text-weight-semibold tickettype">Ticket type:{event.inventory_type}</p>
                     </footer>
                   </header>

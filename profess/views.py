@@ -28,7 +28,7 @@ class UserDetailView(APIView):
 
     def put(self, request, pk):
         user = self.get_user(pk)
-        serializer = UserSerializer(user, data=request.data)
+        serializer = PopulatedUserSerializer(user, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=201)
@@ -81,6 +81,16 @@ class JobList(APIView):
 
         response = requests.get(url, params=params, auth=auth)
         return Response(response.json()['results'])
+
+
+class EventTypesList(APIView):
+
+    def get(self, _request):
+        event_interests = EventsInterest.objects.all()
+        serializer = EventSerializer(event_interests, many=True)
+
+        return Response(serializer.data)
+
 
 
 class EventList(APIView):

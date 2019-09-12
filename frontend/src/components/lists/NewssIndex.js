@@ -23,7 +23,7 @@ class EventsIndex extends React.Component {
         <div className="container is-family-monospace">
           <div className="columns is-horizontal is-multiline">
             {this.state.news.map(news =>
-              <div className="column is-half-tablet is-one-third-desktop" key={news.source.name}>
+              <div className="column is-half-tablet is-one-third-desktop" key={news.title}>
                 <div className="card jobcard">
                   <header className="card-header">
                     <p className="card-header-title jobtitle">

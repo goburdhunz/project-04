@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Auth from '../../lib/Auth'
+import Promise from 'bluebird'
 
 
 class UpdateProfile extends React.Component {
@@ -15,13 +16,14 @@ class UpdateProfile extends React.Component {
         jobs_sector: [],
         news_topic: []
       },
+      eventTypes: [],
       errors: {}
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleCheckbox = this.handleCheckbox.bind(this)
     this.handleEventCheckbox = this.handleEventCheckbox.bind(this)
-    this.checkForEvent = this.checkForEvent.bind(this)
+    this.checkForEventType = this.checkForEventType.bind(this)
   }
 
   getLoggedInUser() {
@@ -30,9 +32,13 @@ class UpdateProfile extends React.Component {
   }
 
   componentDidMount() {
-    const user = this.getLoggedInUser()
-    axios.get(`/api/profile/${user}`)
-      .then(res => this.setState({ formData: res.data }))
+    const userId = this.getLoggedInUser()
+
+    Promise.props({
+      formData: axios.get(`/api/profile/${userId}/`).then(res => res.data),
+      eventTypes: axios.get('/api/event_types/').then(res => res.data)
+    })
+      .then(data => this.setState(data))
   }
 
   handleChange(e) {
@@ -46,27 +52,39 @@ class UpdateProfile extends React.Component {
     this.setState({ formData })
   }
 
-  handleEventCheckbox(e) {
-    let eventtype = [ ...this.state.formData.event_type ]
-    if(e.target.checked) {
-      eventtype.push(e.target.name)
-      eventtype = [...new Set(eventtype)]
+  handleEventCheckbox(eventType) {
+
+    const index = this.state.formData.event_type.findIndex(et => et.id === eventType.id)
+
+    let eventTypes = null
+
+    if(index === -1) {
+      eventTypes = this.state.formData.event_type.concat(eventType)
     } else {
-      const index = eventtype.indexOf(e.target.name)
-      eventtype.splice(index, 1)
+      eventTypes = [
+        ...this.state.formData.event_type.slice(0, index),
+        ...this.state.formData.event_type.slice(index+1)
+      ]
     }
-    const formData = { ...this.state.formData, eventtype }
+
+    const formData = { ...this.state.formData, event_type: eventTypes }
     this.setState({ formData })
   }
 
-  checkForEvent(item) {
-    return this.state.formData.event_type.includes(item)
+  checkForEventType(eventType) {
+    return this.state.formData.event_type.find(et => et.id === eventType.id)
   }
 
   handleSubmit(e) {
     e.preventDefault()
+    const { formData } = this.state
+
     const user = this.getLoggedInUser()
-    axios.put(`/api/profile/${user}/`, this.state.formData)
+    const eventTypes = formData.event_type.map(et => et.id)
+
+    const data = { ...formData, event_type: eventTypes }
+
+    axios.put(`/api/profile/${user}/`, data)
       .then(() => this.props.history.push(`/api/profile/${user}`))
       .catch(err => this.setState({errors: err.response.data}))
   }
@@ -120,7 +138,7 @@ class UpdateProfile extends React.Component {
               <div className="field-body">
                 <div className="field is-expanded">
                   <p className="control is-expanded">
-                    <input className="input is-success" type="text"
+                    <input className="input" type="text"
                       onChange={this.handleChange}
                       name="image" defaultValue={this.state.formData.image || ''}
                       placeholder="e.g Software Engineer"
@@ -137,7 +155,7 @@ class UpdateProfile extends React.Component {
               <div className="field-body">
                 <div className="field is-narrow">
                   <p className="control is-expanded">
-                    <input className="input is-success" type="text" onChange={this.handleChange} name="job_title" defaultValue={this.state.formData.job_title || ''} placeholder="e.g Software Engineer"/>
+                    <input className="input" type="text" onChange={this.handleChange} name="job_title" defaultValue={this.state.formData.job_title || ''} placeholder="e.g Software Engineer"/>
                   </p>
                 </div>
               </div>
@@ -147,37 +165,15 @@ class UpdateProfile extends React.Component {
               <div className="field-label is-normal">
                 <label className="label">Event type</label>
               </div>
-              <label className="checkbox">
-                <input
-                  name="Bid Data" defaultChecked={this.checkForEvent('Big Data') || false}
-                  onChange={this.handleIngredientCheckbox} type="checkbox"
-                />
-                Big Data
-              </label>
-              <label className="checkbox">
-                <input id='6' type="checkbox"/>
-                Social
-              </label>
-              <label className="checkbox">
-                <input id='5' type="checkbox"/>
-                Finance
-              </label>
-              <label className="checkbox">
-                <input id='4' type="checkbox"/>
-                Language
-              </label>
-              <label className="checkbox">
-                <input id='3' type="checkbox"/>
-                Charity
-              </label>
-              <label className="checkbox">
-                <input id='2' type="checkbox"/>
-              Networking
-              </label>
-              <label className="checkbox">
-                <input id='1' type="checkbox"/>
-                Tech
-              </label>
+              {this.state.eventTypes.map(eventType =>
+                <label className="checkbox" key={eventType.id}>
+                  <input
+                    defaultChecked={this.checkForEventType(eventType)}
+                    onChange={() => this.handleEventCheckbox(eventType)} type="checkbox"
+                  />
+                  {eventType.event_type}
+                </label>
+              )}
             </div>
 
             <div className="field is-horizontal jobeditlist">
@@ -256,7 +252,7 @@ class UpdateProfile extends React.Component {
               <div className="field-body">
                 <div className="field">
                   <div className="control">
-                    <input className="input is-danger" onChange={this.handleChange} name="summary" defaultValue={this.state.formData.summary || ''} type="text" placeholder="e.g. Partnership opportunity"/>
+                    <input className="input" onChange={this.handleChange} name="summary" defaultValue={this.state.formData.summary || ''} type="text" placeholder="e.g. Partnership opportunity"/>
                   </div>
                 </div>
               </div>
