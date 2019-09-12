@@ -159,16 +159,22 @@ border-radius: 100px;
   margin-right: 350px;
 }
 
-.jobeditlist {
-  margin-right: 180px;
-}
 
-.newseditlist {
-  margin-right: 310px;
+.updateprofileform input{
+  margin-bottom: 15px;
 }
 
 label.checkbox {
-  margin-right:10px;
+  padding-right:40px;
+}
+
+input.checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.checkboxesdiv {
+  margin-left: 145px;
 }
 
 .newblogsubmit{
@@ -200,6 +206,9 @@ label.checkbox {
   font-size: 50px;
   font-weight: bold;
   text-align: center;
+}
+.updateprofilesubmit{
+  width: 200px;
 }
 
 

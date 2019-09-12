@@ -18,7 +18,7 @@ class UpdateProfile extends React.Component {
       },
       eventTypes: [],
       newsTopics: [],
-      jobsSector: [],
+      jobSectors: [],
       errors: {}
     }
     this.handleChange = this.handleChange.bind(this)
@@ -40,7 +40,7 @@ class UpdateProfile extends React.Component {
       formData: axios.get(`/api/profile/${userId}/`).then(res => res.data),
       eventTypes: axios.get('/api/event_types/').then(res => res.data),
       newsTopics: axios.get('/api/news_topics/').then(res => res.data),
-      jobsSector: axios.get('/api/job_sectors/').then(res => res.data)
+      jobSectors: axios.get('/api/job_sectors/').then(res => res.data)
     })
       .then(data => this.setState(data))
   }
@@ -52,9 +52,10 @@ class UpdateProfile extends React.Component {
 
   handleCheckbox(e) {
     const formData = { ...this.state.formData, [e.target.name]: e.target.checked }
-    console.log(e.target.checked)
     this.setState({ formData })
   }
+
+
 
   handleEventCheckbox(eventType) {
 
@@ -75,9 +76,59 @@ class UpdateProfile extends React.Component {
     this.setState({ formData })
   }
 
+  handleJobCheckbox(jobSector) {
+
+    const index = this.state.formData.job_sector.findIndex(et => et.id === jobSector.id)
+
+    let jobSectors = null
+
+    if(index === -1) {
+      jobSectors = this.state.formData.job_sector.concat(jobSector)
+    } else {
+      jobSectors = [
+        ...this.state.formData.job_sector.slice(0, index),
+        ...this.state.formData.job_sector.slice(index+1)
+      ]
+    }
+
+    const formData = { ...this.state.formData, job_sector: jobSectors }
+    this.setState({ formData })
+  }
+
+
+  handleNewsCheckbox(newsTopic) {
+
+    const index = this.state.formData.news_topic.findIndex(et => et.id === newsTopic.id)
+
+    let newsTopics = null
+
+    if(index === -1) {
+      newsTopics = this.state.formData.news_topic.concat(newsTopic)
+    } else {
+      newsTopics = [
+        ...this.state.formData.news_topic.slice(0, index),
+        ...this.state.formData.news_topic.slice(index+1)
+      ]
+    }
+
+    const formData = { ...this.state.formData, news_topic: newsTopics }
+    this.setState({ formData })
+  }
+
+
+
   checkForEventType(eventType) {
     return this.state.formData.event_type.find(et => et.id === eventType.id)
   }
+
+  checkForJobSector(jobSector) {
+    return this.state.formData.job_sector.find(js => js.id === jobSector.id)
+  }
+
+  checkForNewsTopic(newsTopic) {
+    return this.state.formData.news_topic.find(nt => nt.id === newsTopic.id)
+  }
+
 
   handleSubmit(e) {
     e.preventDefault()
@@ -85,20 +136,23 @@ class UpdateProfile extends React.Component {
 
     const user = this.getLoggedInUser()
     const eventTypes = formData.event_type.map(et => et.id)
+    const jobSectors = formData.job_sector.map(js => js.id)
+    const newsTopics = formData.news_topic.map(nt => nt.id)
 
-    const data = { ...formData, event_type: eventTypes }
+    const data = { ...formData, event_type: eventTypes, job_sector: jobSectors, news_topic: newsTopics }
 
     axios.put(`/api/profile/${user}/`, data)
-      .then(() => this.props.history.push(`/api/profile/${user}`))
+      .then(() => this.props.history.push('/profile/'))
       .catch(err => this.setState({errors: err.response.data}))
   }
 
 
   render() {
+    console.log(this.state.formData)
     return(
       <section className="section formbox has-background-light">
         <div className="containers formcontainer">
-          <form onSubmit={this.handleSubmit}>
+          <form className="updateprofileform" onSubmit={this.handleSubmit}>
             <div className="field is-horizontal">
               <div className="field-label is-normal">
                 <label className="label">Name</label>
@@ -164,89 +218,58 @@ class UpdateProfile extends React.Component {
               </div>
             </div>
 
-            <div className="field is-horizontal eventeditlist">
-              <div className="field-label is-normal">
-                <label className="label">Event type</label>
+            <div className="checkboxesdiv">
+              <div className="field is-horizontal eventeditlist">
+                <div className="field-label is-normal">
+                  <label className="label">Event types</label>
+                </div>
+                {this.state.eventTypes.map(eventType =>
+                  <label className="checkbox" key={eventType.id}>
+                    <input
+                      defaultChecked={this.checkForEventType(eventType)}
+                      onChange={() => this.handleEventCheckbox(eventType)} type="checkbox"
+                      className="checkbox"
+                    />
+                    {eventType.event_type}
+                  </label>
+                )}
               </div>
-              {this.state.eventTypes.map(eventType =>
-                <label className="checkbox" key={eventType.id}>
-                  <input
-                    defaultChecked={this.checkForEventType(eventType)}
-                    onChange={() => this.handleEventCheckbox(eventType)} type="checkbox"
-                  />
-                  {eventType.event_type}
-                </label>
-              )}
+
+              <div className="field is-horizontal eventeditlist">
+                <div className="field-label is-normal">
+                  <label className="label">Job Sectors</label>
+                </div>
+                {this.state.jobSectors.map(jobSector =>
+                  <label className="checkbox" key={jobSector.id}>
+                    <input
+                      defaultChecked={this.checkForJobSector(jobSector)}
+                      onChange={() => this.handleJobCheckbox(jobSector)}
+                      type="checkbox"
+                      className="checkbox"
+                    />
+                    {jobSector.job_sector}
+                  </label>
+                )}
+              </div>
+
+              <div className="field is-horizontal eventeditlist">
+                <div className="field-label is-normal">
+                  <label className="label">News Topics</label>
+                </div>
+                {this.state.newsTopics.map(newsTopic =>
+                  <label className="checkbox" key={newsTopic.id}>
+                    <input
+                      defaultChecked={this.checkForNewsTopic(newsTopic)}
+                      onChange={() => this.handleNewsCheckbox(newsTopic)} type="checkbox"
+                      className="checkbox"
+                    />
+                    {newsTopic.news_topic}
+                  </label>
+                )}
+              </div>
             </div>
 
-            <div className="field is-horizontal jobeditlist">
-              <div className="field-label is-normal">
-                <label className="label">Job Sectors</label>
-              </div>
-              <label className="checkbox">
-                <input id='1' type="checkbox"/>
-                Consulting
-              </label>
-              <label className="checkbox">
-                <input id='2' type="checkbox"/>
-                Human Resources
-              </label>
-              <label className="checkbox">
-                <input id='3' type="checkbox"/>
-                Public Relations
-              </label>
-              <label className="checkbox">
-                <input id='4' type="checkbox"/>
-                Marketing
-              </label>
-              <label className="checkbox">
-                <input id='5' type="checkbox"/>
-                Finance
-              </label>
-              <label className="checkbox">
-                <input id='6' type="checkbox"/>
-              Tech
-              </label>
-              <label className="checkbox">
-                <input id='7' type="checkbox"/>
-                Advertising
-              </label>
-            </div>
-
-            <div className="field is-horizontal newseditlist">
-              <div className="field-label is-normal">
-                <label className="label">News topics</label>
-              </div>
-              <label className="checkbox ">
-                <input id='1' type="checkbox"/>
-                Science
-              </label>
-              <label className="checkbox">
-                <input id='2' type="checkbox"/>
-                Politics
-              </label>
-              <label className="checkbox">
-                <input id='3' type="checkbox"/>
-                Environment
-              </label>
-              <label className="checkbox">
-                <input id='4' type="checkbox"/>
-                Advertising
-              </label>
-              <label className="checkbox">
-                <input id='5' type="checkbox"/>
-                Finance
-              </label>
-              <label className="checkbox">
-                <input id='6' type="checkbox"/>
-              Tech
-              </label>
-              <label className="checkbox">
-                <input id='7' type="checkbox"/>
-                Education
-              </label>
-            </div>
-
+            <hr />
 
             <div className="field is-horizontal">
               <div className="field-label is-normal">
@@ -269,7 +292,7 @@ class UpdateProfile extends React.Component {
               <div className="field-body">
                 <div className="field">
                   <div className="control">
-                    <button className="button is-primary">
+                    <button className="button is-primary updateprofilesubmit">
                       Submit
                     </button>
                   </div>

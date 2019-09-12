@@ -28,7 +28,7 @@ class UserDetailView(APIView):
 
     def put(self, request, pk):
         user = self.get_user(pk)
-        serializer = PopulatedUserSerializer(user, data=request.data)
+        serializer = UserSerializer(user, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=201)

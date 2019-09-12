@@ -62,8 +62,9 @@ class ProfileDetail extends React.Component {
               <article className="tile is-child box">
                 <article className="tile is-child box has-background-light">
                   <p className="title is-4">News Topics Interested In</p>
-                  <p className="subtitle is-6 box">{this.state.user.news_topic[0].news_topic}</p>
-                  <p className="subtitle is-6 box">{this.state.user.news_topic[1].news_topic}</p>
+                  {this.state.user.news_topic.map(newstopic =>
+                    <p key={newstopic.id} className="subtitle is-8 box">{newstopic.news_topic}</p>
+                  )}
                 </article>
               </article>
             </div>
@@ -76,20 +77,22 @@ class ProfileDetail extends React.Component {
                   <article className="tile is-child box">
                     <article className="tile is-child box has-background-light">
                       <p className="title is-4">Event Type Interested In</p>
-                      <p className="subtitle is-6 box">{this.state.user.event_type[0].event_type}</p>
-                      <p className="subtitle is-6 box">{this.state.user.event_type[1].event_type}</p>
-                      <p className="subtitle is-6 box">{this.state.user.event_type[1].event_type}</p>
-                      <p className="subtitle is-6 box">{this.state.user.event_type[2].event_type}</p>
+                      {this.state.user.event_type.map(eventtype =>
+                        <p key={eventtype.id} className="subtitle is-8 box">{eventtype.event_type}</p>
+                      )}
                     </article>
                   </article>
                   <article className="tile is-child box">
                     <article className="tile is-child box has-background-light">
                       <p className="title is-4">Jobs Sectors Interested In</p>
-                      <p className="subtitle is-6 box">{this.state.user.job_sector[0].job_sector}</p>
-                      <p className="subtitle is-6 box">{this.state.user.job_sector[1].job_sector}</p>
+                      {this.state.user.job_sector.map(jobsector =>
+                        <p key={jobsector.id} className="subtitle is-8 box">{jobsector.job_sector}</p>
+                      )}
                     </article>
                   </article>
                 </div>
+
+
                 <div className="tile is-parent is-vertical is-8">
                   <article className="tile is-child box">
                     <article className="tile is-child box has-background-light">
