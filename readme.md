@@ -12,6 +12,10 @@ I chose to build an app which was user focused and combined a blogging functiona
 
 ![alt text](https://i.imgur.com/TbzTFLW.png "Project Homepage")
 
+![alt text](https://i.imgur.com/NLlHCns.png "Project register page")
+
+![alt text](https://i.imgur.com/CGXRk83.png "Project blog list page")
+
 ## Brief
 
 You must:
