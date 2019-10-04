@@ -11,10 +11,17 @@ After a one week introduction to Python and Django, we were tasked with building
 I chose to build an app which was user focused and combined a blogging functionality with some tailored news, job and events services. I used three external rest APIs for the tailored content and created a main user and blog Django models in the backend. Users could register, login, create a blog, view all blogs and only when logged in, view personalised content based on preferences set when setting up their profile. 
 
 ![alt text](https://i.imgur.com/TbzTFLW.png "Project Homepage")
+![alt text](https://i.imgur.com/qLG1nSP.png "Project Homepage code")
 
-![alt text](https://i.imgur.com/NLlHCns.png "Project register page")
+![alt text](https://i.imgur.com/NLlHCns.png "Project login page")
+
+![alt text](https://i.imgur.com/WMDr0Kv.png "Project login page")
+
+![alt text](https://i.imgur.com/KBKHHRW.png "Project login page")
 
 ![alt text](https://i.imgur.com/CGXRk83.png "Project blog list page")
+
+![alt text](https://i.imgur.com/f7Ejcs7.png "Project blog list page")
 
 ## Brief
 
