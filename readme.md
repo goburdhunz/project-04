@@ -68,3 +68,22 @@ Once the endpoints were working i could received the correct data and fields tha
 * Getting used to Django and SQLite - Models, serializers and data migrations connections in Django was quite new and difficult to manage. I would spend much more time planning my models and serializers, as i had problems during development as some fields had to be changed and this resulted in migrations and re-creation of database data. The models and serializers were the backbone and at some points, they were out of shape and re-aligning while building the frontend was challenging.
 * Time - Had grand ideas at the start but time flew while building and i wanted to do so much more.
 * Project idea - I also should have taken longer to really think about what i wanted to build. So more planning and detailed wireframing would have given me more direction.
+
+## Wins
+- We learnt enough Python in order to build an app and the idea was that once you know one coding language (i.e JS), you can learn other languages a little bit easier. This proved to be the case with Python, as much of the syntax was similar to JS - the differences could be learnt with enough practice.
+- Django is powerful and feature-rich - You get so much with just a few scripts that its really easy to start building something quite quickly. Admin panel was very helpful with this project especially when creating data for templating. 
+- Building a full-stack app in 7 days, alone. Was a lot more work than I thought it would be and i did not add everything i had wanted to but was happy to have this as an MVP.
+- Very happy with the homepage - wanted for a long time to have a video homepage background.
+
+## Key Learnings 
+
+- Django is great
+- SQL is more of a challenge than MongoDB/NoSQL - Planning is crucial here and ERD models also. Saves a lot of time down the road. 
+- React is awesome!
+
+## Future implementations
+
+- Building out the user profile a lot more!
+- Calls to APIs should be based on user interests however this was not linked up yet - API calls hardcoded at the moment.
+- Improve UI of lists
+- Add social register/login
