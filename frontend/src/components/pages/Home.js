@@ -8,7 +8,7 @@ const Home = () => {
     <div className="container main">
       <div className="video-container">
         <video autoPlay muted loop>
-          <source src= "https://i.imgur.com/CzVddJz.mp4"
+          <source src= "https://i.imgur.com/SESbxyX.mp4"
             type="video/mp4"/>
         </video>
         <div className="homeintro">
